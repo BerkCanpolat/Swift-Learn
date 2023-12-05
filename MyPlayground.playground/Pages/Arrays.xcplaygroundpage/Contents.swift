@@ -220,3 +220,29 @@ for _ in isimler {
     }
 
 }
+
+
+//ALTERNARİF İSİM ARAMA
+
+print("*****")
+
+var isimlerTwo: [String] = ["Berk","Ali","Ayşe","Hasan Arat"]
+
+var isimKontrolTwo = "BerkK"
+
+var isimKontrolBool = false
+
+for i in isimlerTwo {
+    
+    if i == isimKontrolTwo {
+        isimKontrolBool = true
+        break
+    }
+    
+}
+
+if isimKontrolBool {
+    print("Bu isim mevcuttur \(isimKontrolTwo)")
+} else {
+    print("Bu isim mevcut değildir.")
+}
