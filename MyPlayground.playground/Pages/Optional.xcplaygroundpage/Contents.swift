@@ -15,3 +15,17 @@ if let myNumber = Int(myAge) {
 } else {
     print("Wrong input")
 }
+
+
+///EKSTRA
+
+
+var str:String?
+
+str = "Berk"
+
+if str != nil {
+    print(str!)
+} else {
+    print("Str nil değer içeriyor")
+}
