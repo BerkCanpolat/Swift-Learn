@@ -10,5 +10,6 @@
         <page name='Functions'/>
         <page name='Optional'/>
         <page name='ArabaAnalojisi'/>
+        <page name='OtobusAnalojisi'/>
     </pages>
 </playground>
