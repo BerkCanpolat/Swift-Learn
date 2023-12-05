@@ -6,5 +6,6 @@
         <page name='Set'/>
         <page name='Dictionary'/>
         <page name='While Loops'/>
+        <page name='ifControl'/>
     </pages>
 </playground>
