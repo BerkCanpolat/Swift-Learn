@@ -9,5 +9,6 @@
         <page name='ifControl'/>
         <page name='Functions'/>
         <page name='Optional'/>
+        <page name='ArabaAnalojisi'/>
     </pages>
 </playground>
