@@ -7,5 +7,6 @@
         <page name='Dictionary'/>
         <page name='While Loops'/>
         <page name='ifControl'/>
+        <page name='Functions'/>
     </pages>
 </playground>
