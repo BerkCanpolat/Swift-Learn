@@ -8,5 +8,6 @@
         <page name='While Loops'/>
         <page name='ifControl'/>
         <page name='Functions'/>
+        <page name='Optional'/>
     </pages>
 </playground>
