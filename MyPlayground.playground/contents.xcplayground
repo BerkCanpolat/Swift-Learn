@@ -13,5 +13,6 @@
         <page name='OtobusAnalojisi'/>
         <page name='Initialization-Constructor'/>
         <page name='ClassVeStructureFarki'/>
+        <page name='Enumaretion'/>
     </pages>
 </playground>
