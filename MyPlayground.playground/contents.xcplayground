@@ -16,5 +16,6 @@
         <page name='Enumaretion'/>
         <page name='Composition'/>
         <page name='Kalitim'/>
+        <page name='Closure'/>
     </pages>
 </playground>
