@@ -14,5 +14,6 @@
         <page name='Initialization-Constructor'/>
         <page name='ClassVeStructureFarki'/>
         <page name='Enumaretion'/>
+        <page name='Composition'/>
     </pages>
 </playground>
