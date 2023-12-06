@@ -12,5 +12,6 @@
         <page name='ArabaAnalojisi'/>
         <page name='OtobusAnalojisi'/>
         <page name='Initialization-Constructor'/>
+        <page name='ClassVeStructureFarki'/>
     </pages>
 </playground>
