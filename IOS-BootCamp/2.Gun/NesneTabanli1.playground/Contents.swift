@@ -86,3 +86,62 @@ sahin.calisiyorMu = false
 sahin.bilgiAl()
 sahin.calistir()
 sahin.bilgiAl()
+
+
+
+///FONKSİYONLAR
+
+class Fonksiyonlar {
+    //Geri dönüş değeri olmayan(void)
+    func selamla() {
+        let sonuc = "Merhaba Berk"
+        print(sonuc)
+    }
+    
+    //Geri dönüşü olan (return)
+    func selamla1() -> String {
+        let sonuc = "Merhaba Berko"
+        return sonuc
+    }
+    
+    //Parametre
+    func selaml2(isim:String) {
+        let sonuc = "Merhaba \(isim)"
+        print(sonuc)
+    }
+    
+    func toplama(sayi1:Int,sayi2:Int) -> Int {
+        let sonuc = sayi1 + sayi2
+        return sonuc
+    }
+    
+    //Overloading
+    func carpma(sayi1:Int,sayi2:Int) {
+        print("Çarpma: \(sayi1 * sayi2)")
+    }
+    
+    func carpma(sayi1:Double,sayi2:Double) {
+        print("Çarpma: \(sayi1 * sayi2)")
+    }
+    
+    func carpma(sayi1:Int,sayi2:Int, isim:String) {
+        print("Çarpma: \(sayi1 * sayi2) - İşlemi Yapan: \(isim)")
+    }
+    
+}
+
+
+var f = Fonksiyonlar()
+
+f.selamla()
+
+let gelenSonuc = f.selamla1()
+print(gelenSonuc)
+
+f.selaml2(isim: "Hehe")
+
+let gelenSonuc2 = f.toplama(sayi1: 12, sayi2: 12)
+print(gelenSonuc2)
+
+
+f.carpma(sayi1: 2, sayi2: 4, isim: "Berk")
