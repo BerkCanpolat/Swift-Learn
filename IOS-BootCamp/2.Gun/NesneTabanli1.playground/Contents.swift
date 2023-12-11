@@ -145,3 +145,104 @@ print(gelenSonuc2)
 
 
 f.carpma(sayi1: 2, sayi2: 4, isim: "Berk")
+
+
+
+
+///Static değişkenler ve metodlar
+
+class Asinifi {
+    static var x = 10
+    
+    static func metod() {
+        print("Metod Çalıştı")
+    }
+}
+
+let a = Asinifi()
+
+/*print(a.x)
+
+a.metod()
+
+print(Asinifi().x) //Sanal nesne - virtual object - isimsiz nesne
+
+Asinifi().metod()*/
+
+print(Asinifi.x)
+
+Asinifi.metod()
+
+
+
+///ENUMERATİON(enum)
+
+enum KonserveBoyut {
+    case Kucuk
+    case Orta
+    case Buyuk
+}
+
+func ucretHesapl(boyut:KonserveBoyut, adet:Int) {
+    switch boyut {
+    case .Kucuk:
+        print("Fiyat \(adet * 13)")
+    case .Orta:
+        print("Fiyat: \(adet * 24)")
+    case .Buyuk:
+        print("Fiyat \(adet * 45)")
+    }
+}
+
+ucretHesapl(boyut: .Orta, adet: 100)
+
+
+///COMPOSİTİON
+
+class Kategoriler {
+    var kategori_id:Int?
+    var kategori_ad:String?
+    
+    init(kategori_id:Int,kategori_ad:String) {
+        self.kategori_id = kategori_id
+        self.kategori_ad = kategori_ad
+    }
+}
+
+class Yonetmenler {
+    var yonetmen_id:Int?
+    var yonetmen_ad:String?
+    
+    init(yonetmen_id:Int,yonetmen_ad:String) {
+        self.yonetmen_id = yonetmen_id
+        self.yonetmen_ad = yonetmen_ad
+    }
+}
+
+class Filmler {
+    var film_id:Int?
+    var film_ad:String?
+    var film_yil:Int?
+    var kategori:Kategoriler?
+    var yonetmen:Yonetmenler?
+    
+    init(film_id:Int,film_ad:String,film_yil:Int,kategori:Kategoriler,yonetmen:Yonetmenler) {
+        self.film_id = film_id
+        self.film_ad = film_ad
+        self.film_yil = film_yil
+        self.kategori = kategori
+        self.yonetmen = yonetmen
+    }
+}
+
+var k1 = Kategoriler(kategori_id: 1, kategori_ad: "Drama")
+
+var y1 = Yonetmenler(yonetmen_id: 1, yonetmen_ad: "Berk Canpolat")
+
+var f1 = Filmler(film_id: 1, film_ad: "Ölümlü Dünya", film_yil: 2024, kategori: k1, yonetmen: y1)
+
+print("Film id: \(f1.film_id!)")
+print("Film Ad: \(f1.film_ad!)")
+print("Film yıl: \(f1.film_yil!)")
+print("Film Kategori: \(f1.kategori!.kategori_ad!)")
+print("Film Yönetmen: \(f1.yonetmen!.yonetmen_ad!)")
