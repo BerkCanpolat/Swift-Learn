@@ -1,0 +1,18 @@
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "6pL-0f-P11"; */
+"6pL-0f-P11.configuration.title" = "Giriş Yap";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "6pL-0f-P11"; */
+"6pL-0f-P11.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Creating an effective home delivery and reservation system for restaurants"; ObjectID = "JJ7-9m-GQ5"; */
+"JJ7-9m-GQ5.text" = "Restoranlar için etkili bir eve teslimat ve rezervasyon sistemi oluşturma";
+
+/* Class = "UIButton"; configuration.title = "Sign Up"; ObjectID = "KWX-ua-ORQ"; */
+"KWX-ua-ORQ.configuration.title" = "Üye Ol";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "KWX-ua-ORQ"; */
+"KWX-ua-ORQ.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Quick Delivery at Your Doorstep"; ObjectID = "avX-Cz-BJH"; */
+"avX-Cz-BJH.text" = "Kapınıza Hızlı Teslimat";

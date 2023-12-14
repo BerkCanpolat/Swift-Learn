@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2MV-vK-wLh">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OdevTasarim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="resim" translatesAutoresizingMaskIntoConstraints="NO" id="wET-EY-f6U">
+                                <rect key="frame" x="0.0" y="103" width="393" height="460"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="460" id="uV0-W4-cc3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Delivery at Your Doorstep" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avX-Cz-BJH">
+                                <rect key="frame" x="100" y="583" width="193" height="52.666666666666629"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" name="yazi1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creating an effective home delivery and reservation system for restaurants" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJ7-9m-GQ5">
+                                <rect key="frame" x="60" y="655.66666666666663" width="273" height="26.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" name="yazi2"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="RPL-d1-dKj">
+                                <rect key="frame" x="50" y="692" width="293" height="105"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pL-0f-P11">
+                                        <rect key="frame" x="0.0" y="0.0" width="293" height="50"/>
+                                        <color key="backgroundColor" name="button"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="sYp-Rv-Wjr"/>
+                                        </constraints>
+                                        <color key="tintColor" name="yazi1"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWX-ua-ORQ">
+                                        <rect key="frame" x="0.0" y="55" width="293" height="50"/>
+                                        <color key="backgroundColor" name="anaRenk"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="jge-nm-dks"/>
+                                        </constraints>
+                                        <color key="tintColor" name="button"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Sign Up">
+                                            <color key="baseForegroundColor" name="button"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="anaRenk"/>
+                        <constraints>
+                            <constraint firstItem="JJ7-9m-GQ5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="8Mm-GG-nE3"/>
+                            <constraint firstAttribute="trailing" secondItem="avX-Cz-BJH" secondAttribute="trailing" constant="100" id="Dj2-lk-onp"/>
+                            <constraint firstItem="JJ7-9m-GQ5" firstAttribute="top" secondItem="avX-Cz-BJH" secondAttribute="bottom" constant="20" id="J4E-pw-8yh"/>
+                            <constraint firstItem="RPL-d1-dKj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="LNf-v0-KTE"/>
+                            <constraint firstItem="avX-Cz-BJH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="OmR-yb-EpW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wET-EY-f6U" secondAttribute="trailing" id="Q1a-wX-m1N"/>
+                            <constraint firstItem="avX-Cz-BJH" firstAttribute="top" secondItem="wET-EY-f6U" secondAttribute="bottom" constant="20" id="WL5-Qt-Mev"/>
+                            <constraint firstItem="wET-EY-f6U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bdz-h5-7em"/>
+                            <constraint firstItem="wET-EY-f6U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ddh-f7-eUW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RPL-d1-dKj" secondAttribute="trailing" constant="50" id="fHQ-e2-uF3"/>
+                            <constraint firstAttribute="trailing" secondItem="JJ7-9m-GQ5" secondAttribute="trailing" constant="60" id="hvx-iW-H7o"/>
+                            <constraint firstItem="RPL-d1-dKj" firstAttribute="top" secondItem="JJ7-9m-GQ5" secondAttribute="bottom" constant="10" id="kcY-Xt-u7A"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ngx-a2-c4V"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1005.3435114503816" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yZA-RA-sfp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2MV-vK-wLh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uOS-Ig-L8p">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="UmD-Ax-8Tl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sb6-Iy-FUq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="78.625954198473281" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="resim" width="1116" height="1562.3333740234375"/>
+        <namedColor name="anaRenk">
+            <color red="0.016000000759959221" green="0.13699999451637268" blue="0.14900000393390656" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="button">
+            <color red="0.85098039215686272" green="0.41176470588235292" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="yazi1">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="yazi2">
+            <color red="0.31372549019607843" green="0.38431372549019605" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
