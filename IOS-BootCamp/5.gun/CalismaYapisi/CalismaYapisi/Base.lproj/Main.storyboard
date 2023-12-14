@@ -52,6 +52,18 @@
                     </view>
                     <navigationItem key="navigationItem" title="Anasayfa" id="27C-RQ-kCW">
                         <barButtonItem key="backBarButtonItem" title="Geri" id="ppd-cf-vcU"/>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="Pf4-iJ-d8F">
+                                <connections>
+                                    <action selector="buttonAdd:" destination="BYZ-38-t0r" id="PWj-k7-xIv"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="save" id="8ri-NR-8VD">
+                                <connections>
+                                    <action selector="buttonSave:" destination="BYZ-38-t0r" id="HKN-bx-SNw"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="labelAnasayfa" destination="aNr-cw-qdf" id="VKT-tx-70S"/>
