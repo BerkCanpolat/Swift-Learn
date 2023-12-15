@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ENQ-t0-Epi">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AltinciGunOdev" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTy-Wz-qi4">
+                                <rect key="frame" x="150" y="427" width="114" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Git B"/>
+                                <connections>
+                                    <action selector="sayfaBgit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pBH-wC-8q9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtS-Di-pno">
+                                <rect key="frame" x="150" y="242" width="114" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Git A"/>
+                                <connections>
+                                    <action selector="sayfaAgit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aAy-F8-i1Y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XTy-Wz-qi4" firstAttribute="top" secondItem="EtS-Di-pno" secondAttribute="bottom" constant="150" id="2t1-5q-LVG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EtS-Di-pno" secondAttribute="trailing" constant="150" id="995-6t-ufa"/>
+                            <constraint firstItem="XTy-Wz-qi4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="Co6-4E-B6X"/>
+                            <constraint firstItem="EtS-Di-pno" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="KGc-mn-pLx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XTy-Wz-qi4" secondAttribute="trailing" constant="150" id="Lkz-Et-L3V"/>
+                            <constraint firstItem="EtS-Di-pno" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="kzO-IN-1lX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nC8-tQ-404"/>
+                    <connections>
+                        <segue destination="CkW-gf-pUi" kind="show" identifier="sayfaB" id="g9x-1D-XlG"/>
+                        <segue destination="7nc-Cz-hx6" kind="show" identifier="sayfaA" id="8d7-yF-9nc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1049.2753623188407" y="3.3482142857142856"/>
+        </scene>
+        <!--SayfaAVC-->
+        <scene sceneID="8Bt-K8-3Ja">
+            <objects>
+                <viewController id="7nc-Cz-hx6" customClass="SayfaAVC" customModule="AltinciGunOdev" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uwe-Xr-7Us">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxp-pX-4CP">
+                                <rect key="frame" x="165.5" y="430.5" width="83" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sayfa D"/>
+                                <connections>
+                                    <action selector="sayfaDgit:" destination="7nc-Cz-hx6" eventType="touchUpInside" id="Mr3-I2-VhC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JO6-iu-qbk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Sxp-pX-4CP" firstAttribute="centerY" secondItem="Uwe-Xr-7Us" secondAttribute="centerY" id="Y3R-tc-Ksn"/>
+                            <constraint firstItem="Sxp-pX-4CP" firstAttribute="centerX" secondItem="Uwe-Xr-7Us" secondAttribute="centerX" id="vOG-pA-39x"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pky-YS-8i3"/>
+                    <connections>
+                        <segue destination="IaZ-tN-30g" kind="show" identifier="sayfaD" id="dw8-dn-edy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X5a-Sk-GoQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1906" y="-380"/>
+        </scene>
+        <!--SayfaDVC-->
+        <scene sceneID="20Z-mT-ewf">
+            <objects>
+                <viewController id="IaZ-tN-30g" customClass="SayfaDVC" customModule="AltinciGunOdev" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uvc-y6-byu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Utq-MA-G1j">
+                                <rect key="frame" x="166" y="430.5" width="82" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sayfa Y"/>
+                                <connections>
+                                    <action selector="sayfaYgit:" destination="IaZ-tN-30g" eventType="touchUpInside" id="kMb-Jc-z0x"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2SG-de-XyS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Utq-MA-G1j" firstAttribute="centerX" secondItem="Uvc-y6-byu" secondAttribute="centerX" id="hVQ-xD-mW5"/>
+                            <constraint firstItem="Utq-MA-G1j" firstAttribute="centerY" secondItem="Uvc-y6-byu" secondAttribute="centerY" id="hti-tz-bHL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fkT-5t-HDO"/>
+                    <connections>
+                        <segue destination="eEA-5d-Ndm" kind="show" identifier="sayfaY" id="jkc-DD-Mtg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xb4-w9-Nfd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2838" y="-380"/>
+        </scene>
+        <!--SayfaXVC-->
+        <scene sceneID="pdF-98-LGc">
+            <objects>
+                <viewController id="CkW-gf-pUi" customClass="SayfaXVC" customModule="AltinciGunOdev" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W6n-VP-7e0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xab-yX-VgV">
+                                <rect key="frame" x="176.5" y="430.5" width="61" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Git Y"/>
+                                <connections>
+                                    <action selector="gitY:" destination="CkW-gf-pUi" eventType="touchUpInside" id="X6W-la-QTK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bek-Cd-dJ0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xab-yX-VgV" firstAttribute="centerY" secondItem="W6n-VP-7e0" secondAttribute="centerY" id="3aZ-t2-mkd"/>
+                            <constraint firstItem="Xab-yX-VgV" firstAttribute="centerX" secondItem="W6n-VP-7e0" secondAttribute="centerX" id="aep-Og-efk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nEV-iK-S6K"/>
+                    <connections>
+                        <segue destination="eEA-5d-Ndm" kind="show" identifier="sayfaY" id="HFW-4w-eFf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RJd-57-n5c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1907" y="305"/>
+        </scene>
+        <!--SayfaYVC-->
+        <scene sceneID="tQz-ug-i5f">
+            <objects>
+                <viewController id="eEA-5d-Ndm" customClass="SayfaYVC" customModule="AltinciGunOdev" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LYl-vq-MNI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTM-zE-uId">
+                                <rect key="frame" x="161.5" y="430.5" width="91" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Geri Dön"/>
+                                <connections>
+                                    <action selector="geriDon:" destination="eEA-5d-Ndm" eventType="touchUpInside" id="CPC-wU-FFZ"/>
+                                    <action selector="geriDon:" destination="irU-Sk-MLE" eventType="touchUpInside" id="DbA-Xt-LJP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zL0-8F-5Jq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tTM-zE-uId" firstAttribute="centerY" secondItem="LYl-vq-MNI" secondAttribute="centerY" id="5O3-Z7-Cq9"/>
+                            <constraint firstItem="tTM-zE-uId" firstAttribute="centerX" secondItem="LYl-vq-MNI" secondAttribute="centerX" id="p7T-Ft-KoV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FNJ-gD-Lp3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7fr-V4-7Hx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="irU-Sk-MLE" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2838" y="305"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="y7R-Cv-Q5Y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ENQ-t0-Epi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dxg-7w-Q70">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="sD1-5N-N3u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lCQ-gi-9Lg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.13043478260872" y="3.3482142857142856"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="jkc-DD-Mtg"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
