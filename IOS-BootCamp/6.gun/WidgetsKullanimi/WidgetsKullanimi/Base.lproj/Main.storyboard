@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WidgetsKullanimi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2y8-Nc-a9R">
+                                <rect key="frame" x="186" y="64" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xti-TH-ovV">
+                                <rect key="frame" x="50" y="101" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgr-wz-TQK">
+                                <rect key="frame" x="181" y="151" width="52.5" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Yap"/>
+                                <connections>
+                                    <action selector="yapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Jb-nt-lwo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFs-1V-sIb">
+                                <rect key="frame" x="32" y="235" width="77.5" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resim1"/>
+                                <connections>
+                                    <action selector="resim1Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XiQ-KE-Ai5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNW-cP-ArQ">
+                                <rect key="frame" x="301.5" y="235" width="80.5" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resim2"/>
+                                <connections>
+                                    <action selector="resim2Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ugx-DG-pef"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="resim1" translatesAutoresizingMaskIntoConstraints="NO" id="hT4-Si-r2O">
+                                <rect key="frame" x="183" y="236" width="48" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HuB-z1-gJ3"/>
+                                    <constraint firstAttribute="width" constant="48" id="KKl-qM-921"/>
+                                </constraints>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yx1-OP-HuS">
+                                <rect key="frame" x="182.5" y="302" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchButton:" destination="BYZ-38-t0r" eventType="valueChanged" id="vEg-6n-OmH"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxg-oB-qgi">
+                                <rect key="frame" x="169.5" y="797" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Göster"/>
+                                <connections>
+                                    <action selector="gosterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lql-bf-T8a"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="62U-Xp-vCD">
+                                <rect key="frame" x="92" y="349" width="230" height="32"/>
+                                <segments>
+                                    <segment title="Yemekler"/>
+                                    <segment title="Tatlılar"/>
+                                    <segment title="İçecekler"/>
+                                </segments>
+                                <connections>
+                                    <action selector="buttonSegment:" destination="BYZ-38-t0r" eventType="valueChanged" id="sg5-YA-QGM"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hT4-Si-r2O" firstAttribute="top" secondItem="dgr-wz-TQK" secondAttribute="bottom" constant="50" id="30q-Ll-oyY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oNW-cP-ArQ" secondAttribute="trailing" constant="32" id="8An-fY-Atd"/>
+                            <constraint firstItem="Yx1-OP-HuS" firstAttribute="top" secondItem="hT4-Si-r2O" secondAttribute="bottom" constant="16" id="8qN-Hl-jZz"/>
+                            <constraint firstItem="Xti-TH-ovV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="AB1-uz-kGa"/>
+                            <constraint firstItem="oNW-cP-ArQ" firstAttribute="top" secondItem="Xti-TH-ovV" secondAttribute="bottom" constant="100" id="Bsb-Gs-mmE"/>
+                            <constraint firstItem="dgr-wz-TQK" firstAttribute="top" secondItem="Xti-TH-ovV" secondAttribute="bottom" constant="16" id="Cj1-5N-lbe"/>
+                            <constraint firstItem="vFs-1V-sIb" firstAttribute="top" secondItem="Xti-TH-ovV" secondAttribute="bottom" constant="100" id="RnH-xX-7SO"/>
+                            <constraint firstItem="62U-Xp-vCD" firstAttribute="top" secondItem="Yx1-OP-HuS" secondAttribute="bottom" constant="16" id="SgN-Ga-0rt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xti-TH-ovV" secondAttribute="trailing" constant="50" id="T7T-fG-bzb"/>
+                            <constraint firstItem="oxg-oB-qgi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U9r-rb-Zzs"/>
+                            <constraint firstItem="Xti-TH-ovV" firstAttribute="top" secondItem="2y8-Nc-a9R" secondAttribute="bottom" constant="16" id="e0O-zu-vt3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oxg-oB-qgi" secondAttribute="bottom" constant="30" id="oBf-Uf-i98"/>
+                            <constraint firstItem="hT4-Si-r2O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ojZ-oC-ZEZ"/>
+                            <constraint firstItem="62U-Xp-vCD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pK4-nF-fNA"/>
+                            <constraint firstItem="Yx1-OP-HuS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sPd-ZK-uDC"/>
+                            <constraint firstItem="2y8-Nc-a9R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ufb-Rk-bzQ"/>
+                            <constraint firstItem="dgr-wz-TQK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v1u-ox-LGN"/>
+                            <constraint firstItem="vFs-1V-sIb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="wGV-pW-YXq"/>
+                            <constraint firstItem="2y8-Nc-a9R" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="ybl-Kh-3Fz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="hT4-Si-r2O" id="zeF-4d-IB1"/>
+                        <outlet property="labelSonuc" destination="2y8-Nc-a9R" id="Nkx-6w-cKu"/>
+                        <outlet property="mySegment" destination="62U-Xp-vCD" id="SX9-a0-hDR"/>
+                        <outlet property="mySwitch" destination="Yx1-OP-HuS" id="21e-iJ-awL"/>
+                        <outlet property="textField" destination="Xti-TH-ovV" id="ZSB-Ul-Pcr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="80" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="resim1" width="13" height="13"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
