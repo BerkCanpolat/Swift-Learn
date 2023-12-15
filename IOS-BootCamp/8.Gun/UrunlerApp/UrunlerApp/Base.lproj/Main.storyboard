@@ -101,6 +101,7 @@
                     <navigationItem key="navigationItem" title="Ürünler" id="Fj5-vK-9cA"/>
                     <connections>
                         <outlet property="tableView" destination="YR0-xd-HaD" id="KAe-eB-3FU"/>
+                        <segue destination="nJg-2G-mlU" kind="show" identifier="toDetay" id="DvJ-Q9-3q3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -114,9 +115,42 @@
                     <view key="view" contentMode="scaleToFill" id="HqV-nB-sph">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bilgisayar" translatesAutoresizingMaskIntoConstraints="NO" id="BSB-Zd-3rs">
+                                <rect key="frame" x="79" y="176" width="256" height="256"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35999 ₺" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQ3-g9-9ub">
+                                <rect key="frame" x="148" y="464" width="118" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlF-G9-070">
+                                <rect key="frame" x="32" y="795" width="350" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Sepete Ekle"/>
+                                <connections>
+                                    <action selector="buttonSepeteEkle:" destination="nJg-2G-mlU" eventType="touchUpInside" id="q7d-CP-96P"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="3i6-qw-30E"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MQ3-g9-9ub" firstAttribute="centerX" secondItem="HqV-nB-sph" secondAttribute="centerX" id="04z-hq-I6k"/>
+                            <constraint firstItem="MQ3-g9-9ub" firstAttribute="top" secondItem="BSB-Zd-3rs" secondAttribute="bottom" constant="32" id="0nw-6R-EKh"/>
+                            <constraint firstItem="BSB-Zd-3rs" firstAttribute="top" secondItem="3i6-qw-30E" secondAttribute="top" constant="32" id="GGS-LK-xe8"/>
+                            <constraint firstItem="BSB-Zd-3rs" firstAttribute="centerX" secondItem="HqV-nB-sph" secondAttribute="centerX" id="Hi7-wH-Ta9"/>
+                            <constraint firstItem="VlF-G9-070" firstAttribute="leading" secondItem="3i6-qw-30E" secondAttribute="leading" constant="32" id="PfX-4U-SbG"/>
+                            <constraint firstItem="3i6-qw-30E" firstAttribute="trailing" secondItem="VlF-G9-070" secondAttribute="trailing" constant="32" id="UXT-Zc-qj5"/>
+                            <constraint firstItem="3i6-qw-30E" firstAttribute="bottom" secondItem="VlF-G9-070" secondAttribute="bottom" constant="32" id="b8y-8I-1V7"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ekd-W9-Bh9"/>
+                    <connections>
+                        <outlet property="imageViewUrun" destination="BSB-Zd-3rs" id="8Br-c2-6sN"/>
+                        <outlet property="labelUrunFiyat" destination="MQ3-g9-9ub" id="ATZ-cN-7gw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3c8-vh-ata" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

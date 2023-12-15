@@ -42,7 +42,7 @@ class Anasayfa: UIViewController {
 
 }
 
-extension Anasayfa: UITableViewDelegate, UITableViewDataSource {
+extension Anasayfa: UITableViewDelegate, UITableViewDataSource, HucreProtocol {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return urunListesi.count
     }
@@ -59,6 +59,46 @@ extension Anasayfa: UITableViewDelegate, UITableViewDataSource {
         cell.backgroundColor = UIColor(white: 0.95, alpha: 1)
         cell.hucreArkaPlan.layer.cornerRadius = 10.0
         
+        cell.protocolUlas = self
+        cell.indexUlas = indexPath
+        
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let urun = urunListesi[indexPath.row]
+        
+        let silAction = UIContextualAction(style: .destructive, title: "Sil") { contextualAction,view,bool in
+            print("\(urun.ad!) Silindi")
+        }
+        
+        let duzenleAction = UIContextualAction(style: .normal, title: "Düzenle") { contextualAction,view,bool in
+            print("\(urun.ad!) Düzenlendi")
+        }
+        
+        return UISwipeActionsConfiguration(actions: [silAction,duzenleAction])
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let urun = urunListesi[indexPath.row]
+        
+        performSegue(withIdentifier: "toDetay", sender: urun)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetay" {
+            if let urun = sender as? Urunler {
+                let gidilecekVC = segue.destination as! DetaySayfa
+                
+                gidilecekVC.urun = urun
+            }
+        }
+    }
+    
+    func sepeteEkleTiklandi(indexPath: IndexPath) {
+        let urun = urunListesi[indexPath.row]
+        print("\(urun.ad!) Sepete eklendi")
     }
 }
