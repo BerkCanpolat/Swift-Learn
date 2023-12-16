@@ -13,6 +13,8 @@ class Anasayfa: UIViewController {
     
     
     var filmlerListe = [Filmler]()
+    
+    var viewModel = AnasayfaViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,19 +22,10 @@ class Anasayfa: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        let f1 = Filmler(id: 1, ad: "Django", resim: "django", fiyat: 24)
-        let f2 = Filmler(id: 2, ad: "Interstellar", resim: "interstellar", fiyat: 32)
-        let f3 = Filmler(id: 3, ad: "Inception", resim: "inception", fiyat: 16)
-        let f4 = Filmler(id: 4, ad: "The Hateful Eight", resim: "thehatefuleight", fiyat: 28)
-        let f5 = Filmler(id: 5, ad: "The Pianist", resim: "thepianist", fiyat: 18)
-        let f6 = Filmler(id: 6, ad: "Anadoluda", resim: "anadoluda", fiyat: 10)
-        
-        filmlerListe.append(f1)
-        filmlerListe.append(f2)
-        filmlerListe.append(f3)
-        filmlerListe.append(f4)
-        filmlerListe.append(f5)
-        filmlerListe.append(f6)
+        _ = viewModel.filmlerListe.subscribe(onNext: { liste in
+            self.filmlerListe = liste
+            self.collectionView.reloadData()
+        })
         
         let tasarim = UICollectionViewFlowLayout()
         
