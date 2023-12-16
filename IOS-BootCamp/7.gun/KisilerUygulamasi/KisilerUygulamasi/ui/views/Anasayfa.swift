@@ -15,26 +15,23 @@ class Anasayfa: UIViewController {
     
     var kisilerListesi = [Kisiler]()
     
+    var viewModel = AnasayfaViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         searchBar.delegate = self
         kisilerTableView.delegate = self
         kisilerTableView.dataSource = self
         
-        let k1 = Kisiler(kisi_id: 1, kisi_ad: "Berk", kisi_tel: "123213123")
-        let k2 = Kisiler(kisi_id: 2, kisi_ad: "Hasan", kisi_tel: "12312313")
-        let k3 = Kisiler(kisi_id: 3, kisi_ad: "Ali", kisi_tel: "1111111")
-        let k4 = Kisiler(kisi_id: 4, kisi_ad: "Veli", kisi_tel: "444444444")
-        
-        kisilerListesi.append(k1)
-        kisilerListesi.append(k2)
-        kisilerListesi.append(k3)
-        kisilerListesi.append(k4)
+        _ = viewModel.kisilerListesi.subscribe(onNext: { liste in
+            self.kisilerListesi = liste
+            self.kisilerTableView.reloadData()
+        })
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        print("Anasayfaya Dönüldü")
+        viewModel.kisileriYukle()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -84,7 +81,7 @@ extension Anasayfa: UITableViewDelegate, UITableViewDataSource {
             alert.addAction(iptalAction)
             
             let evetAction = UIAlertAction(title: "Evet", style: .destructive) { action in
-                print("Kişi Sil: \(kisi.kisi_id!)")
+                self.viewModel.sil(kisi_id: kisi.kisi_id!)
                 
             }
             
@@ -101,7 +98,7 @@ extension Anasayfa: UITableViewDelegate, UITableViewDataSource {
 
 extension Anasayfa: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        print("Kişi ara: \(searchText)")
+        viewModel.arama(search: searchText)
     }
 }
 
