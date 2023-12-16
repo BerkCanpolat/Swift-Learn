@@ -13,6 +13,9 @@
 		C0E136D82B2DF36800CA2F51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E136D62B2DF36800CA2F51 /* Main.storyboard */; };
 		C0E136DA2B2DF36800CA2F51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0E136D92B2DF36800CA2F51 /* Assets.xcassets */; };
 		C0E136DD2B2DF36800CA2F51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E136DB2B2DF36800CA2F51 /* LaunchScreen.storyboard */; };
+		C0E136E52B2DF94900CA2F51 /* AnasayfaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E136E42B2DF94900CA2F51 /* AnasayfaViewModel.swift */; };
+		C0E136F42B2DFC4800CA2F51 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C0E136F32B2DFC4800CA2F51 /* RxSwift */; };
+		C0E136FC2B2DFFE400CA2F51 /* MatematikRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E136FB2B2DFFE400CA2F51 /* MatematikRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,8 @@
 		C0E136D92B2DF36800CA2F51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0E136DC2B2DF36800CA2F51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0E136DE2B2DF36800CA2F51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0E136E42B2DF94900CA2F51 /* AnasayfaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaViewModel.swift; sourceTree = "<group>"; };
+		C0E136FB2B2DFFE400CA2F51 /* MatematikRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatematikRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0E136F42B2DFC4800CA2F51 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +65,8 @@
 				C0E136D02B2DF36800CA2F51 /* AppDelegate.swift */,
 				C0E136D22B2DF36800CA2F51 /* SceneDelegate.swift */,
 				C0E136D42B2DF36800CA2F51 /* ViewController.swift */,
+				C0E136E42B2DF94900CA2F51 /* AnasayfaViewModel.swift */,
+				C0E136FB2B2DFFE400CA2F51 /* MatematikRepository.swift */,
 				C0E136D62B2DF36800CA2F51 /* Main.storyboard */,
 				C0E136D92B2DF36800CA2F51 /* Assets.xcassets */,
 				C0E136DB2B2DF36800CA2F51 /* LaunchScreen.storyboard */,
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = MVVMKullanimi;
+			packageProductDependencies = (
+				C0E136F32B2DFC4800CA2F51 /* RxSwift */,
+			);
 			productName = MVVMKullanimi;
 			productReference = C0E136CD2B2DF36800CA2F51 /* MVVMKullanimi.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = C0E136C42B2DF36800CA2F51;
+			packageReferences = (
+				C0E136E62B2DFC4800CA2F51 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = C0E136CE2B2DF36800CA2F51 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,7 +154,9 @@
 			files = (
 				C0E136D52B2DF36800CA2F51 /* ViewController.swift in Sources */,
 				C0E136D12B2DF36800CA2F51 /* AppDelegate.swift in Sources */,
+				C0E136E52B2DF94900CA2F51 /* AnasayfaViewModel.swift in Sources */,
 				C0E136D32B2DF36800CA2F51 /* SceneDelegate.swift in Sources */,
+				C0E136FC2B2DFFE400CA2F51 /* MatematikRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +379,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C0E136E62B2DFC4800CA2F51 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C0E136F32B2DFC4800CA2F51 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0E136E62B2DFC4800CA2F51 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C0E136C52B2DF36800CA2F51 /* Project object */;
 }
