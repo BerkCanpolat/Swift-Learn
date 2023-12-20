@@ -17,6 +17,17 @@
 		C034E92B2B33086A00AFF76D /* NotsAddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034E92A2B33086A00AFF76D /* NotsAddVC.swift */; };
 		C034E92D2B33087E00AFF76D /* NotsUpdateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034E92C2B33087E00AFF76D /* NotsUpdateVC.swift */; };
 		C034E9322B330D6D00AFF76D /* NotsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034E9312B330D6D00AFF76D /* NotsModel.swift */; };
+		C034E9342B33224200AFF76D /* NotsDaoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034E9332B33224200AFF76D /* NotsDaoRepository.swift */; };
+		C034E9362B3322A500AFF76D /* ViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034E9352B3322A500AFF76D /* ViewControllerViewModel.swift */; };
+		C034E9382B3322B500AFF76D /* NotsAddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034E9372B3322B500AFF76D /* NotsAddViewModel.swift */; };
+		C034E93A2B3322C500AFF76D /* NotsUpdateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034E9392B3322C500AFF76D /* NotsUpdateViewModel.swift */; };
+		C034E9492B33230700AFF76D /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C034E9482B33230700AFF76D /* RxSwift */; };
+		C034E95E2B33282D00AFF76D /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C034E9542B33282C00AFF76D /* FMDatabaseAdditions.m */; };
+		C034E95F2B33282D00AFF76D /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = C034E9552B33282C00AFF76D /* FMDatabasePool.m */; };
+		C034E9602B33282D00AFF76D /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C034E9562B33282C00AFF76D /* FMDatabase.m */; };
+		C034E9612B33282D00AFF76D /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C034E9572B33282C00AFF76D /* FMDatabaseQueue.m */; };
+		C034E9622B33282D00AFF76D /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = C034E9582B33282C00AFF76D /* FMResultSet.m */; };
+		C034E96E2B3333FC00AFF76D /* rehberr.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = C034E96D2B3333FC00AFF76D /* rehberr.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +43,24 @@
 		C034E92A2B33086A00AFF76D /* NotsAddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotsAddVC.swift; sourceTree = "<group>"; };
 		C034E92C2B33087E00AFF76D /* NotsUpdateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotsUpdateVC.swift; sourceTree = "<group>"; };
 		C034E9312B330D6D00AFF76D /* NotsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotsModel.swift; sourceTree = "<group>"; };
+		C034E9332B33224200AFF76D /* NotsDaoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotsDaoRepository.swift; sourceTree = "<group>"; };
+		C034E9352B3322A500AFF76D /* ViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerViewModel.swift; sourceTree = "<group>"; };
+		C034E9372B3322B500AFF76D /* NotsAddViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotsAddViewModel.swift; sourceTree = "<group>"; };
+		C034E9392B3322C500AFF76D /* NotsUpdateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotsUpdateViewModel.swift; sourceTree = "<group>"; };
+		C034E9512B3327FF00AFF76D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		C034E9522B33282C00AFF76D /* odevApp-7-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "odevApp-7-Bridging-Header.h"; sourceTree = "<group>"; };
+		C034E9532B33282C00AFF76D /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		C034E9542B33282C00AFF76D /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		C034E9552B33282C00AFF76D /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		C034E9562B33282C00AFF76D /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		C034E9572B33282C00AFF76D /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		C034E9582B33282C00AFF76D /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		C034E9592B33282C00AFF76D /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		C034E95A2B33282C00AFF76D /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		C034E95B2B33282C00AFF76D /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		C034E95C2B33282C00AFF76D /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		C034E95D2B33282C00AFF76D /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		C034E96D2B3333FC00AFF76D /* rehberr.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = rehberr.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C034E9492B33230700AFF76D /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +80,7 @@
 			children = (
 				C034E90F2B32FDF000AFF76D /* odevApp-7 */,
 				C034E90E2B32FDF000AFF76D /* Products */,
+				C034E9502B3327FE00AFF76D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +103,19 @@
 				C034E9192B32FDF100AFF76D /* Assets.xcassets */,
 				C034E91B2B32FDF100AFF76D /* LaunchScreen.storyboard */,
 				C034E91E2B32FDF100AFF76D /* Info.plist */,
+				C034E9532B33282C00AFF76D /* FMDatabase.h */,
+				C034E9562B33282C00AFF76D /* FMDatabase.m */,
+				C034E9592B33282C00AFF76D /* FMDatabaseAdditions.h */,
+				C034E9542B33282C00AFF76D /* FMDatabaseAdditions.m */,
+				C034E95B2B33282C00AFF76D /* FMDatabasePool.h */,
+				C034E9552B33282C00AFF76D /* FMDatabasePool.m */,
+				C034E95A2B33282C00AFF76D /* FMDatabaseQueue.h */,
+				C034E9572B33282C00AFF76D /* FMDatabaseQueue.m */,
+				C034E95D2B33282C00AFF76D /* FMDB.h */,
+				C034E95C2B33282C00AFF76D /* FMResultSet.h */,
+				C034E9582B33282C00AFF76D /* FMResultSet.m */,
+				C034E9522B33282C00AFF76D /* odevApp-7-Bridging-Header.h */,
+				C034E96D2B3333FC00AFF76D /* rehberr.sqlite */,
 			);
 			path = "odevApp-7";
 			sourceTree = "<group>";
@@ -107,6 +151,9 @@
 		C034E9272B3300F500AFF76D /* viewmodel */ = {
 			isa = PBXGroup;
 			children = (
+				C034E9352B3322A500AFF76D /* ViewControllerViewModel.swift */,
+				C034E9372B3322B500AFF76D /* NotsAddViewModel.swift */,
+				C034E9392B3322C500AFF76D /* NotsUpdateViewModel.swift */,
 			);
 			path = viewmodel;
 			sourceTree = "<group>";
@@ -131,8 +178,17 @@
 		C034E9302B330A7900AFF76D /* repo */ = {
 			isa = PBXGroup;
 			children = (
+				C034E9332B33224200AFF76D /* NotsDaoRepository.swift */,
 			);
 			path = repo;
+			sourceTree = "<group>";
+		};
+		C034E9502B3327FE00AFF76D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C034E9512B3327FF00AFF76D /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +207,9 @@
 			dependencies = (
 			);
 			name = "odevApp-7";
+			packageProductDependencies = (
+				C034E9482B33230700AFF76D /* RxSwift */,
+			);
 			productName = "odevApp-7";
 			productReference = C034E90D2B32FDF000AFF76D /* odevApp-7.app */;
 			productType = "com.apple.product-type.application";
@@ -167,6 +226,7 @@
 				TargetAttributes = {
 					C034E90C2B32FDF000AFF76D = {
 						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -179,6 +239,9 @@
 				Base,
 			);
 			mainGroup = C034E9042B32FDF000AFF76D;
+			packageReferences = (
+				C034E93B2B33230700AFF76D /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = C034E90E2B32FDF000AFF76D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -193,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C034E96E2B3333FC00AFF76D /* rehberr.sqlite in Resources */,
 				C034E91D2B32FDF100AFF76D /* LaunchScreen.storyboard in Resources */,
 				C034E91A2B32FDF100AFF76D /* Assets.xcassets in Resources */,
 				C034E9182B32FDF000AFF76D /* Main.storyboard in Resources */,
@@ -206,13 +270,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C034E93A2B3322C500AFF76D /* NotsUpdateViewModel.swift in Sources */,
 				C034E9152B32FDF000AFF76D /* ViewController.swift in Sources */,
+				C034E95F2B33282D00AFF76D /* FMDatabasePool.m in Sources */,
+				C034E9602B33282D00AFF76D /* FMDatabase.m in Sources */,
 				C034E92D2B33087E00AFF76D /* NotsUpdateVC.swift in Sources */,
+				C034E9612B33282D00AFF76D /* FMDatabaseQueue.m in Sources */,
+				C034E9622B33282D00AFF76D /* FMResultSet.m in Sources */,
+				C034E9382B3322B500AFF76D /* NotsAddViewModel.swift in Sources */,
+				C034E9342B33224200AFF76D /* NotsDaoRepository.swift in Sources */,
 				C034E9292B33012000AFF76D /* NotsCell.swift in Sources */,
 				C034E9112B32FDF000AFF76D /* AppDelegate.swift in Sources */,
 				C034E9132B32FDF000AFF76D /* SceneDelegate.swift in Sources */,
 				C034E9322B330D6D00AFF76D /* NotsModel.swift in Sources */,
+				C034E9362B3322A500AFF76D /* ViewControllerViewModel.swift in Sources */,
 				C034E92B2B33086A00AFF76D /* NotsAddVC.swift in Sources */,
+				C034E95E2B33282D00AFF76D /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7UAX3JG94G;
@@ -380,6 +454,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "berk.odevApp-7";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "odevApp-7/odevApp-7-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -390,6 +466,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7UAX3JG94G;
@@ -408,6 +485,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "berk.odevApp-7";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "odevApp-7/odevApp-7-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -435,6 +513,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C034E93B2B33230700AFF76D /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C034E9482B33230700AFF76D /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C034E93B2B33230700AFF76D /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C034E9052B32FDF000AFF76D /* Project object */;
 }

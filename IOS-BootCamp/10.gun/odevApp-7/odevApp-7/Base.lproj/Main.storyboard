@@ -46,18 +46,10 @@
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/12/2024" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQf-7I-T1H">
-                                                    <rect key="frame" x="10" y="62" width="54" height="12"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Q9P-si-iE2" firstAttribute="leading" secondItem="1F1-jd-pzl" secondAttribute="leadingMargin" constant="10" id="Ep9-cq-Eyl"/>
                                                 <constraint firstItem="7U5-ex-dLF" firstAttribute="leading" secondItem="1F1-jd-pzl" secondAttribute="leading" constant="10" id="Exq-WX-Q16"/>
-                                                <constraint firstItem="QQf-7I-T1H" firstAttribute="leading" secondItem="1F1-jd-pzl" secondAttribute="leading" constant="10" id="FHA-7e-Qxw"/>
-                                                <constraint firstItem="QQf-7I-T1H" firstAttribute="top" secondItem="Q9P-si-iE2" secondAttribute="bottom" constant="10" id="NZJ-81-RNH"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Q9P-si-iE2" secondAttribute="trailing" constant="20" id="VQn-Xr-046"/>
                                                 <constraint firstAttribute="trailing" secondItem="7U5-ex-dLF" secondAttribute="trailing" constant="20" id="a77-d4-HSu"/>
                                                 <constraint firstItem="7U5-ex-dLF" firstAttribute="top" secondItem="1F1-jd-pzl" secondAttribute="top" id="dff-4q-s5Z"/>
@@ -66,7 +58,6 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="notsContentLabel" destination="Q9P-si-iE2" id="1Y9-OO-B7L"/>
-                                            <outlet property="notsDateLabel" destination="QQf-7I-T1H" id="Cxz-lc-6yI"/>
                                             <outlet property="notsHeadLabel" destination="7U5-ex-dLF" id="S8u-dV-OK4"/>
                                         </connections>
                                     </tableViewCell>

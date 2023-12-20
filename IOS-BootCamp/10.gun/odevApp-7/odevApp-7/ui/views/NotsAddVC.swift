@@ -14,6 +14,9 @@ class NotsAddVC: UIViewController {
     @IBOutlet weak var contentField: UITextField!
     @IBOutlet weak var notsAddhidden: UIBarButtonItem!
     
+    
+    var viewModel = NotsAddViewModel()
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,10 +36,10 @@ class NotsAddVC: UIViewController {
     @IBAction func notsAdd(_ sender: Any) {
         
         if let head = headField.text, let content = contentField.text {
-            print("\(head) - \(content) Eklendi")
+            viewModel.notsAdd(nots_head: head, nots_content: content)
+            navigationController?.popViewController(animated: true)
         }
         
     }
-    
     
 }

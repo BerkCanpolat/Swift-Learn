@@ -17,9 +17,8 @@ class ViewController: UIViewController {
     
     //MARK: - Propertys
     var notsList = [NotsModel]()
-    
-    
-    
+    var viewModel = ViewControllerViewModel()
+    let cellSpacingHeight: CGFloat = 5
     
     //MARK: - LifeCycle
     override func viewDidLoad() {
@@ -40,13 +39,16 @@ class ViewController: UIViewController {
         tableViews.delegate = self
         tableViews.dataSource = self
         
-        let n1 = NotsModel(nots_content: "Bugün swift ile sqlite kullanarak not uygulaması geliştiriyorum deneme yapıyorum broo", nots_head: "Swift - Sqlite", nots_date: "12/20/2023",nots_id: 1)
-        let n2 = NotsModel(nots_content: "Buda ikinci notum", nots_head: "Başlığım", nots_date: "12/12/2024",nots_id: 2)
+        _ = viewModel.notsShowList.subscribe(onNext: { list in
+            self.notsList = list
+            self.tableViews.reloadData()
+        })
         
-        notsList.append(n1)
-        notsList.append(n2)
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        viewModel.notsShow()
+    }
 
 }
 
@@ -65,9 +67,14 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "notID", for: indexPath) as! NotsCell
         
+        
         cell.notsHeadLabel.text = notIndex.nots_head
         cell.notsContentLabel.text = notIndex.nots_content
-        cell.notsDateLabel.text = notIndex.nots_date
+        cell.backgroundColor = UIColor.lightText
+        cell.layer.cornerRadius = 10
+        cell.layer.borderWidth = 1
+        cell.layer.borderColor = UIColor.softRandom().cgColor
+        
         return cell
     }
     
@@ -78,7 +85,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let silAction = UIContextualAction(style: .destructive, title: "Sil") { contextualAction, view,bool in
             let alert = UIAlertController(title: "Notu Sil", message: "\(notIndex.nots_head!) başlıklı notu silmek istediğine emin misin?", preferredStyle: .alert)
             let evetAction = UIAlertAction(title: "Evet", style: .destructive) { UIAlertAction in
-                print("\(notIndex.nots_head!) - Silindi")
+                self.viewModel.deleteNots(nots_id: notIndex.nots_id)
             }
             
             let hayirAction = UIAlertAction(title: "Hayır", style: .default)
@@ -116,7 +123,15 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 //MARK: - Search Bar
 extension ViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        print("\(searchText)")
+        viewModel.searchNots(search: searchText)
     }
 }
 
+extension UIColor {
+    static func softRandom() -> UIColor {
+        let hue = CGFloat.random(in: 0...1)
+        let saturation = CGFloat.random(in: 0.3...0.7)
+        let brightness = CGFloat.random(in: 0.7...1.0)
+        return UIColor(hue: hue, saturation: saturation, brightness: brightness, alpha: 1.0)
+    }
+}

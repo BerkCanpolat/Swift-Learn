@@ -16,7 +16,7 @@ class NotsUpdateVC: UIViewController {
     
     //MARK: - Propertys
     var updateNote:NotsModel?
-    
+    var viewModel = NotsUpdateViewModel()
     
 
     //MARK: - LifeCycle
@@ -44,7 +44,8 @@ class NotsUpdateVC: UIViewController {
     
     @IBAction func updateButton(_ sender: Any) {
         if let head = headField.text, let content = contentField.text, let n = updateNote {
-            print("\(head) - \(content) - \(n.nots_id)")
+            viewModel.notsUpdate(nots_head: head, nots_content: content, nots_id: n.nots_id)
+            navigationController?.popViewController(animated: true)
         }
     }
     

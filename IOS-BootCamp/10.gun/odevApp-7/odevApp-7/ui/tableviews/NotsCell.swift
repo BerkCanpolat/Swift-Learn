@@ -12,7 +12,6 @@ class NotsCell: UITableViewCell {
     
     @IBOutlet weak var notsHeadLabel: UILabel!
     @IBOutlet weak var notsContentLabel: UILabel!
-    @IBOutlet weak var notsDateLabel: UILabel!
     
 
     override func awakeFromNib() {
