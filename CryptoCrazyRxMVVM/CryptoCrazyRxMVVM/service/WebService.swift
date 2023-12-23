@@ -16,7 +16,7 @@ class WebService {
     
     func downloadCurrencies(url: URL, completion: @escaping (Result<[Crypto],CryptoError>) -> () ) {
         URLSession.shared.dataTask(with: url) { data, response, error in
-            if let error = error {
+            if let _ = error {
                 //Serverden veri gelmedi anlamına gelir.
                 completion(.failure(CryptoError.serverError))
             } else if let data = data {

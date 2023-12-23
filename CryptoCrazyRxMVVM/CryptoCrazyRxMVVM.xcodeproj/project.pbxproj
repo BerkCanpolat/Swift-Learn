@@ -17,6 +17,7 @@
 		C0785E112B36E60800A29AF7 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0785E102B36E60800A29AF7 /* WebService.swift */; };
 		C0785E132B36EF2800A29AF7 /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0785E122B36EF2800A29AF7 /* CryptoViewModel.swift */; };
 		C0785E222B36F29900A29AF7 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C0785E212B36F29900A29AF7 /* RxSwift */; };
+		C0785E2E2B3709D700A29AF7 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = C0785E2D2B3709D700A29AF7 /* RxCocoa */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0785E222B36F29900A29AF7 /* RxSwift in Frameworks */,
+				C0785E2E2B3709D700A29AF7 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +130,7 @@
 			name = CryptoCrazyRxMVVM;
 			packageProductDependencies = (
 				C0785E212B36F29900A29AF7 /* RxSwift */,
+				C0785E2D2B3709D700A29AF7 /* RxCocoa */,
 			);
 			productName = CryptoCrazyRxMVVM;
 			productReference = C0785DF32B36DD1D00A29AF7 /* CryptoCrazyRxMVVM.app */;
@@ -432,6 +435,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C0785E142B36F29900A29AF7 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		C0785E2D2B3709D700A29AF7 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0785E142B36F29900A29AF7 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
