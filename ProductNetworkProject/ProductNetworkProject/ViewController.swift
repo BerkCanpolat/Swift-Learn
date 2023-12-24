@@ -50,18 +50,39 @@ class ViewController: UIViewController {
                                 if !arananKelime.isEmpty {
                                     
                                     if (product["title"] as? String)?.lowercased().range(of: arananKelime.lowercased()) != nil {
-                                        self.model.append(Model(
-                                            title: "\(product["title"]!)",
-                                            thumbnail: "\(product["thumbnail"]!)"))
+                                        
+                                        if let imagesData = product["images"] as? [String] {
+                                            var imagesArray = [Images]()
+                                            for imageData in imagesData {
+                                                imagesArray.append(Images(images: imageData))
+                                            }
+                                            
+                                            self.model.append(Model(
+                                                title: "\(product["title"]!)",
+                                                thumbnail: "\(product["thumbnail"]!)"))
+                                        } else {
+                                            print("imagesData değeri boş")
+                                        }
+
                                     }
                                     
                                 } else {
-                                    self.model.append(Model(
-                                        title: "\(product["title"]!)",
-                                        description: "\(product["description"]!)",
-                                        price: product["price"] as? Int,
-                                        thumbnail: "\(product["thumbnail"]!)",
-                                        images: imagesArray))
+                                    
+                                    if let imagesData = product["images"] as? [String] {
+                                        var imagesArray = [Images]()
+                                        for imageData in imagesData {
+                                            imagesArray.append(Images(images: imageData))
+                                        }
+                                        self.model.append(Model(
+                                            title: "\(product["title"]!)",
+                                            description: "\(product["description"]!)",
+                                            price: product["price"] as? Int,
+                                            thumbnail: "\(product["thumbnail"]!)",
+                                            images: imagesArray))
+                                    } else {
+                                        print("imagedaata boş")
+                                    }
+
                                 }
 
                             }
@@ -114,5 +135,25 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         }
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let secilenItem = model[indexPath.row]
+        
+        performSegue(withIdentifier: "toDetail", sender: secilenItem)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetail",
+           let hedefVC = segue.destination as? DetailVC,
+           let secilenCell = sender as? Model {
+            
+            if let images = secilenCell.images {
+                hedefVC.model = secilenCell
+                hedefVC.images = images
+            } else {
+                print("Resim dizisi boş")
+            }
+        }
     }
 }

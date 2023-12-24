@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0AC86432B38B555006C6F63 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AC86422B38B555006C6F63 /* DetailCell.swift */; };
+		C0AC86452B38B5DB006C6F63 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AC86442B38B5DB006C6F63 /* DetailVC.swift */; };
 		C0CD828C2B388EED00A0B825 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CD828B2B388EED00A0B825 /* AppDelegate.swift */; };
 		C0CD828E2B388EED00A0B825 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CD828D2B388EED00A0B825 /* SceneDelegate.swift */; };
 		C0CD82902B388EED00A0B825 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CD828F2B388EED00A0B825 /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C0AC86422B38B555006C6F63 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
+		C0AC86442B38B5DB006C6F63 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		C0CD82882B388EED00A0B825 /* ProductNetworkProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductNetworkProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0CD828B2B388EED00A0B825 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0CD828D2B388EED00A0B825 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 				C0CD82992B388EEE00A0B825 /* Info.plist */,
 				C0CD829F2B38902800A0B825 /* ProductCell.swift */,
 				C0CD82A12B3892B600A0B825 /* Model.swift */,
+				C0AC86422B38B555006C6F63 /* DetailCell.swift */,
+				C0AC86442B38B5DB006C6F63 /* DetailVC.swift */,
 			);
 			path = ProductNetworkProject;
 			sourceTree = "<group>";
@@ -157,9 +163,11 @@
 			files = (
 				C0CD82A22B3892B600A0B825 /* Model.swift in Sources */,
 				C0CD82902B388EED00A0B825 /* ViewController.swift in Sources */,
+				C0AC86432B38B555006C6F63 /* DetailCell.swift in Sources */,
 				C0CD82A02B38902800A0B825 /* ProductCell.swift in Sources */,
 				C0CD828C2B388EED00A0B825 /* AppDelegate.swift in Sources */,
 				C0CD828E2B388EED00A0B825 /* SceneDelegate.swift in Sources */,
+				C0AC86452B38B5DB006C6F63 /* DetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
