@@ -12,7 +12,7 @@ class QuizViewModel {
     private var responseModel: ResponseModel?
     private var questionModel: [QuestionModel] = []
     
-    func fetchData(completion: @escaping () -> Void) {
+    func fetchDatax(completion: @escaping () -> Void) {
         WebService.shared.getQuestions { responseModel in
             if let rModel = responseModel, let questions = responseModel?.questions {
                 
@@ -24,5 +24,16 @@ class QuizViewModel {
     }
     
     
+    func numberOfItemsInsection() -> Int {
+        return questionModel.count
+    }
+    
+    func questionID(at index: Int) -> QuestionModel? {
+        guard index >= 0 && index < questionModel.count else {
+            return nil
+        }
+        
+        return questionModel[index]
+    }
     
 }

@@ -33,11 +33,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="START QUIZ"/>
+                                <connections>
+                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qi1-p6-8o1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <segue destination="pRh-PY-PYz" kind="presentation" identifier="toQuiz" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="ODF-vf-nMQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,7 +58,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osm-Vl-01h">
-                                <rect key="frame" x="15.999999999999993" y="84" width="103.33333333333331" height="35"/>
+                                <rect key="frame" x="15.999999999999993" y="25" width="103.33333333333331" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sınavı Bitir"/>
                                 <connections>
@@ -60,7 +66,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YnD-mR-Ib5">
-                                <rect key="frame" x="264" y="84" width="113" height="35"/>
+                                <rect key="frame" x="264" y="25" width="113" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Soruyu Geç"/>
                                 <connections>
@@ -68,9 +74,9 @@
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5mk-9R-Ycx">
-                                <rect key="frame" x="0.0" y="119" width="393" height="699"/>
+                                <rect key="frame" x="0.0" y="60" width="393" height="792"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9Lj-Bk-PSB">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9Lj-Bk-PSB">
                                     <size key="itemSize" width="390" height="700"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -78,7 +84,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="IhX-WK-eq4" customClass="QuestionCell" customModule="QuizApp" customModuleProvider="target">
-                                        <rect key="frame" x="-8.6666666666666661" y="0.0" width="410" height="700"/>
+                                        <rect key="frame" x="0.0" y="46" width="410" height="700"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9Jf-rr-Tmi">
                                             <rect key="frame" x="0.0" y="0.0" width="410" height="700"/>
@@ -128,6 +134,7 @@
                                                 <constraint firstItem="z8S-h4-b9g" firstAttribute="top" secondItem="89d-ke-z2P" secondAttribute="bottom" constant="15" id="bXq-b9-gp9"/>
                                                 <constraint firstItem="x9h-20-FSj" firstAttribute="top" secondItem="L2h-Np-nMV" secondAttribute="bottom" constant="15" id="cGr-e7-vL8"/>
                                                 <constraint firstItem="L2h-Np-nMV" firstAttribute="leading" secondItem="9Jf-rr-Tmi" secondAttribute="leading" constant="30" id="cUn-uh-Hz8"/>
+                                                <constraint firstAttribute="bottom" secondItem="x9h-20-FSj" secondAttribute="bottom" constant="249" id="iAv-aX-ZoB"/>
                                                 <constraint firstItem="x9h-20-FSj" firstAttribute="leading" secondItem="9Jf-rr-Tmi" secondAttribute="leading" constant="30" id="m9s-ge-umY"/>
                                                 <constraint firstItem="Mjl-qJ-Nna" firstAttribute="leading" secondItem="9Jf-rr-Tmi" secondAttribute="leading" constant="10" id="ysd-9T-ij5"/>
                                                 <constraint firstAttribute="trailing" secondItem="Mjl-qJ-Nna" secondAttribute="trailing" constant="10" id="zIC-YQ-4Go"/>
@@ -157,6 +164,7 @@
                             <constraint firstItem="osm-Vl-01h" firstAttribute="top" secondItem="XYc-Nb-vdB" secondAttribute="top" constant="25" id="pPN-VG-3Gn"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Qg9-iQ-VMg"/>
                     <connections>
                         <outlet property="collectionView" destination="5mk-9R-Ycx" id="g17-Wk-Iph"/>
                     </connections>

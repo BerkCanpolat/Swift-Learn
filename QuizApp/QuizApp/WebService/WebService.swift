@@ -28,6 +28,6 @@ class WebService {
                     completion(nil)
                 }
             }
-        }
+        }.resume()
     }
 }

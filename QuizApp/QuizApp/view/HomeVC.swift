@@ -14,5 +14,10 @@ class HomeVC: UIViewController {
 
         
     }
+    
+    @IBAction func startButton(_ sender: Any) {
+        performSegue(withIdentifier: "toQuiz", sender: nil)
+    }
+    
 
 }

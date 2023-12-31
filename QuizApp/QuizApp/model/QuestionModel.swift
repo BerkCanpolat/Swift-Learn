@@ -21,4 +21,5 @@ struct QuestionModel:Codable {
     var option_2:String?
     var option_3:String?
     var option_4:String?
+    var question:String?
 }
