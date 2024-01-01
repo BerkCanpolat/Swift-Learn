@@ -12,6 +12,7 @@ class QuizVC: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     var quizViewModel = QuizViewModel()
+    var score = 0
     
 
     override func viewDidLoad() {
@@ -29,6 +30,30 @@ class QuizVC: UIViewController {
             DispatchQueue.main.async {
                 self.collectionView.reloadData()
             }
+        }
+    }
+    
+    
+    func cevaplariKaristir(question: QuestionModel) -> [String] {
+        var options = [question.option_1, question.option_2, question.option_3, question.option_4]
+        options.shuffle()
+        return options.compactMap{$0}
+    }
+    
+    func setupCell(cell: QuestionCell, with question: QuestionModel) {
+        cell.questionLabel.text = question.question
+        let shuffledOptions = cevaplariKaristir(question: question)
+        cell.option1.setTitle(shuffledOptions[0], for: .normal)
+        cell.option2.setTitle(shuffledOptions[1], for: .normal)
+        cell.option3.setTitle(shuffledOptions[2], for: .normal)
+        cell.option4.setTitle(shuffledOptions[3], for: .normal)
+    }
+    
+    func dogruCevapKontrolu(question: QuestionModel, secilenCevap:String) {
+        if let dogruCevap = question.correct_answer, secilenCevap == dogruCevap {
+            score += 1
+        } else {
+            
         }
     }
     
@@ -60,6 +85,7 @@ extension QuizVC: UICollectionViewDelegate, UICollectionViewDataSource {
             cell.option2.setTitle(item.option_2, for: .normal)
             cell.option3.setTitle(item.option_3, for: .normal)
             cell.option4.setTitle(item.option_4, for: .normal)
+            setupCell(cell: cell, with: item)
         }
         
         return cell
