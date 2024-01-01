@@ -15,6 +15,7 @@
 		C08C32F02B42E9870016AA7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C08C32EE2B42E9870016AA7A /* Main.storyboard */; };
 		C08C32F22B42E9880016AA7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C08C32F12B42E9880016AA7A /* Assets.xcassets */; };
 		C08C32F52B42E9880016AA7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C08C32F32B42E9880016AA7A /* LaunchScreen.storyboard */; };
+		C0F836682B434985004800A6 /* SonucVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F836672B434984004800A6 /* SonucVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		C08C32EF2B42E9870016AA7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C08C32F12B42E9880016AA7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C08C32F42B42E9880016AA7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C0F836672B434984004800A6 /* SonucVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonucVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				C08C32E82B42E9870016AA7A /* Actions.sks */,
 				C08C32EA2B42E9870016AA7A /* GameScene.swift */,
 				C08C32EC2B42E9870016AA7A /* GameViewController.swift */,
+				C0F836672B434984004800A6 /* SonucVC.swift */,
 				C08C32EE2B42E9870016AA7A /* Main.storyboard */,
 				C08C32F12B42E9880016AA7A /* Assets.xcassets */,
 				C08C32F32B42E9880016AA7A /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C08C32EB2B42E9870016AA7A /* GameScene.swift in Sources */,
+				C0F836682B434985004800A6 /* SonucVC.swift in Sources */,
 				C08C32ED2B42E9870016AA7A /* GameViewController.swift in Sources */,
 				C08C32E52B42E9870016AA7A /* AppDelegate.swift in Sources */,
 			);
