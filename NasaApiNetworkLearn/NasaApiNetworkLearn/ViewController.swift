@@ -45,7 +45,8 @@ class ViewController: UIViewController {
                             self.imageView.image = UIImage(data: try Data(contentsOf: URL(string: hdurl)!))
                         } catch {
                             print(error.localizedDescription)
-                        }                    }
+                        }
+                    }
                 }
             }
             
