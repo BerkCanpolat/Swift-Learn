@@ -12,7 +12,7 @@ class KisilerDaoRepository {
     var kisilerListesi = BehaviorSubject<[Kisiler]>(value: [Kisiler]())
     
     func kaydet(kisi_ad:String,kisi_tel:String) {
-        print("Kişi Kaydet: \(kisi_ad) - \(kisi_tel)")
+        let yeniKisi:[String:Any] = ["kisi_ad":kisi_ad,"kisi_tel":kisi_tel,"kisi_id":""]
     }
     
     func guncelle(kisi_ad:String,kisi_tel:String,kisi_id:Int) {
