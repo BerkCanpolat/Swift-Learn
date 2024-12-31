@@ -22,12 +22,12 @@ class ViewController: UIViewController {
     
     private func setupData() {
         let category1 = Categories(name: "Birinci Kategori", movies: [Movies(image: "resim"), Movies(image: "resim2")])
-        let category2 = Categories(name: "İkinci Kategori", movies: [Movies(image: "resim2"), Movies(image: "resim")])
+        /*let category2 = Categories(name: "İkinci Kategori", movies: [Movies(image: "resim2"), Movies(image: "resim")])
         let category3 = Categories(name: "Üçüncü Kategori", movies: [Movies(image: "resim"), Movies(image: "resim2")])
         let category4 = Categories(name: "Dördüncü Kategori", movies: [Movies(image: "resim2"), Movies(image: "resim")])
-        let category5 = Categories(name: "Beşinci Kategori", movies: [Movies(image: "resim"), Movies(image: "resim2")])
+        let category5 = Categories(name: "Beşinci Kategori", movies: [Movies(image: "resim"), Movies(image: "resim2")])*/
         
-        categories = [category1,category2,category3,category4,category5]
+        categories = [category1]
     }
     
     func setupTable() {

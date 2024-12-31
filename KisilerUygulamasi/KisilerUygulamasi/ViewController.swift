@@ -11,7 +11,7 @@ import CoreData
 let app = UIApplication.shared.delegate as! AppDelegate
 
 class ViewController: UIViewController {
-    
+        
     
     //MARK: - UIElements
     @IBOutlet weak var searchBar: UISearchBar!

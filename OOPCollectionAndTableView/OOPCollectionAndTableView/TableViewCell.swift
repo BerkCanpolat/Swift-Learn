@@ -33,6 +33,8 @@ class TableViewCell: UITableViewCell {
         collectionView.reloadData()
     }
 
+    
+
 }
 
 extension TableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
