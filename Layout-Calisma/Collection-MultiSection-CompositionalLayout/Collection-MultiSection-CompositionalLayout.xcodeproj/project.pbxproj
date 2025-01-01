@@ -13,6 +13,13 @@
 		C03BC1622D24D73300AD2DD8 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C03BC1612D24D73300AD2DD8 /* Base */; };
 		C03BC1642D24D73400AD2DD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C03BC1632D24D73400AD2DD8 /* Assets.xcassets */; };
 		C03BC1672D24D73400AD2DD8 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C03BC1662D24D73400AD2DD8 /* Base */; };
+		C03BC16F2D24D78600AD2DD8 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BC16E2D24D78600AD2DD8 /* MockData.swift */; };
+		C03BC1712D24D7A100AD2DD8 /* ListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BC1702D24D7A100AD2DD8 /* ListSection.swift */; };
+		C03BC1732D24D7B000AD2DD8 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BC1722D24D7B000AD2DD8 /* ListItem.swift */; };
+		C03BC1752D24DF8800AD2DD8 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BC1742D24DF8800AD2DD8 /* StoryCollectionViewCell.swift */; };
+		C03BC1772D24DF9800AD2DD8 /* PortraitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BC1762D24DF9800AD2DD8 /* PortraitCollectionViewCell.swift */; };
+		C03BC1792D24DFA400AD2DD8 /* LandScapeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BC1782D24DFA400AD2DD8 /* LandScapeCollectionViewCell.swift */; };
+		C03BC17B2D24DFB600AD2DD8 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BC17A2D24DFB600AD2DD8 /* CollectionReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		C03BC1632D24D73400AD2DD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C03BC1662D24D73400AD2DD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C03BC1682D24D73400AD2DD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C03BC16E2D24D78600AD2DD8 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		C03BC1702D24D7A100AD2DD8 /* ListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSection.swift; sourceTree = "<group>"; };
+		C03BC1722D24D7B000AD2DD8 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		C03BC1742D24DF8800AD2DD8 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		C03BC1762D24DF9800AD2DD8 /* PortraitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitCollectionViewCell.swift; sourceTree = "<group>"; };
+		C03BC1782D24DFA400AD2DD8 /* LandScapeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandScapeCollectionViewCell.swift; sourceTree = "<group>"; };
+		C03BC17A2D24DFB600AD2DD8 /* CollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +77,13 @@
 				C03BC1632D24D73400AD2DD8 /* Assets.xcassets */,
 				C03BC1652D24D73400AD2DD8 /* LaunchScreen.storyboard */,
 				C03BC1682D24D73400AD2DD8 /* Info.plist */,
+				C03BC16E2D24D78600AD2DD8 /* MockData.swift */,
+				C03BC1702D24D7A100AD2DD8 /* ListSection.swift */,
+				C03BC1722D24D7B000AD2DD8 /* ListItem.swift */,
+				C03BC1742D24DF8800AD2DD8 /* StoryCollectionViewCell.swift */,
+				C03BC1762D24DF9800AD2DD8 /* PortraitCollectionViewCell.swift */,
+				C03BC1782D24DFA400AD2DD8 /* LandScapeCollectionViewCell.swift */,
+				C03BC17A2D24DFB600AD2DD8 /* CollectionReusableView.swift */,
 			);
 			path = "Collection-MultiSection-CompositionalLayout";
 			sourceTree = "<group>";
@@ -138,9 +159,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C03BC1732D24D7B000AD2DD8 /* ListItem.swift in Sources */,
 				C03BC15F2D24D73300AD2DD8 /* ViewController.swift in Sources */,
+				C03BC16F2D24D78600AD2DD8 /* MockData.swift in Sources */,
+				C03BC17B2D24DFB600AD2DD8 /* CollectionReusableView.swift in Sources */,
 				C03BC15B2D24D73300AD2DD8 /* AppDelegate.swift in Sources */,
 				C03BC15D2D24D73300AD2DD8 /* SceneDelegate.swift in Sources */,
+				C03BC1752D24DF8800AD2DD8 /* StoryCollectionViewCell.swift in Sources */,
+				C03BC1792D24DFA400AD2DD8 /* LandScapeCollectionViewCell.swift in Sources */,
+				C03BC1772D24DF9800AD2DD8 /* PortraitCollectionViewCell.swift in Sources */,
+				C03BC1712D24D7A100AD2DD8 /* ListSection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
