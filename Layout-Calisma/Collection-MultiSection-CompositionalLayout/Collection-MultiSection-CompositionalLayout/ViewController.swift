@@ -40,10 +40,23 @@ class ViewController: UIViewController {
                 section.interGroupSpacing = 10
                 section.contentInsets = .init(top: 0, leading: 10, bottom: 0, trailing: 10)
                 section.boundarySupplementaryItems = [supplementaryHeaderItem()]
-                section.supplementariesFollowContentInsets = false
+                //section.supplementariesFollowContentInsets = false
                 return section
             case .popular:
-                return nil
+                // item
+                let item = NSCollectionLayoutItem(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)))
+                
+                // group
+                let group = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .fractionalWidth(0.6), heightDimension: .fractionalHeight(0.6)), subitems: [item])
+                
+                // section
+                let section = NSCollectionLayoutSection(group: group)
+                section.orthogonalScrollingBehavior = .paging
+                section.interGroupSpacing = 10
+                section.contentInsets = .init(top: 0, leading: 10, bottom: 0, trailing: 10)
+                section.boundarySupplementaryItems = [supplementaryHeaderItem()]
+                //section.supplementariesFollowContentInsets = false
+                return section
             case .comingSoon:
                 return nil
             }
