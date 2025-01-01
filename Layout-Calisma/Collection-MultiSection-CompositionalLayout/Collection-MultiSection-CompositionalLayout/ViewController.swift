@@ -39,6 +39,8 @@ class ViewController: UIViewController {
                 section.orthogonalScrollingBehavior = .continuous
                 section.interGroupSpacing = 10
                 section.contentInsets = .init(top: 0, leading: 10, bottom: 0, trailing: 10)
+                section.boundarySupplementaryItems = [supplementaryHeaderItem()]
+                section.supplementariesFollowContentInsets = false
                 return section
             case .popular:
                 return nil
@@ -46,6 +48,10 @@ class ViewController: UIViewController {
                 return nil
             }
         }
+    }
+    
+    private func supplementaryHeaderItem() -> NSCollectionLayoutBoundarySupplementaryItem {
+        .init(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .estimated(50)), elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
     }
 
 
