@@ -38,7 +38,7 @@ class ViewController: UIViewController {
                 let section = NSCollectionLayoutSection(group: group)
                 section.orthogonalScrollingBehavior = .continuous
                 section.interGroupSpacing = 10
-                section.contentInsets = .init(top: 0, leading: 10, bottom: 0, trailing: 10)
+                section.contentInsets = .init(top: 0, leading: 10, bottom: 30, trailing: 10)
                 section.boundarySupplementaryItems = [supplementaryHeaderItem()]
                 //section.supplementariesFollowContentInsets = false
                 return section
@@ -51,14 +51,27 @@ class ViewController: UIViewController {
                 
                 // section
                 let section = NSCollectionLayoutSection(group: group)
-                section.orthogonalScrollingBehavior = .paging
+                section.orthogonalScrollingBehavior = .continuous
                 section.interGroupSpacing = 10
-                section.contentInsets = .init(top: 0, leading: 10, bottom: 0, trailing: 10)
+                section.contentInsets = .init(top: 0, leading: 10, bottom: 30, trailing: 10)
                 section.boundarySupplementaryItems = [supplementaryHeaderItem()]
                 //section.supplementariesFollowContentInsets = false
                 return section
             case .comingSoon:
-                return nil
+                // item
+                let item = NSCollectionLayoutItem(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)))
+                
+                // group
+                let group = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .absolute(170), heightDimension: .absolute(80)), subitems: [item])
+                
+                // section
+                let section = NSCollectionLayoutSection(group: group)
+                section.orthogonalScrollingBehavior = .continuous
+                section.interGroupSpacing = 10
+                section.contentInsets = .init(top: 0, leading: 10, bottom: 30, trailing: 10)
+                section.boundarySupplementaryItems = [supplementaryHeaderItem()]
+                //section.supplementariesFollowContentInsets = false
+                return section
             }
         }
     }
