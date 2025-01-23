@@ -9,28 +9,60 @@ import XCTest
 @testable import ProtocolOriented_Test
 
 final class ProtocolOriented_TestTests: XCTestCase {
+    
+    private var userViewModel : UserViewModel!
+    
+    private var userService : MockUserService!
+    
+    private var output : MockUserViewModelOutPut!
+    
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        userService = MockUserService()
+        userViewModel = UserViewModel(userService: userService)
+        output = MockUserViewModelOutPut()
+        userViewModel.output = output
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        userService = nil
+        userViewModel = nil
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testUpdateView_whenAPISuccess_showsEmailNameUserName() throws {
+        let mockUser = User(id: 1, name: "Berk", username: "Canpolat", email: "bb@gmail.com", phone: "05544 33 44", website: "berk.com")
+        
+        userService.fetchUserMockresult = .success(mockUser)
+        userViewModel.fetchUsers()
+        
+        XCTAssertEqual(output.updateViewArray.first?.userName, "Canpolat")
     }
+    
+    func testUpdateView_whenAPIFailure_showsNoUser() throws {
+        userService.fetchUserMockresult = .failure(NSError())
+        userViewModel.fetchUsers()
+        XCTAssertEqual(output.updateViewArray.first?.name, "No user")
+        
+    }
+    
+}
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+class MockUserService: UserService {
+    var fetchUserMockresult : Result<ProtocolOriented_Test.User, any Error>?
+    func fetchUser(completion: @escaping (Result<ProtocolOriented_Test.User, any Error>) -> Void) {
+        if let result = fetchUserMockresult {
+            completion(result)
         }
     }
+    
+    
+}
 
+class MockUserViewModelOutPut: UserViewModelProtocol {
+    var updateViewArray : [(name:String, email:String,userName:String)] = []
+    func updateView(name: String, email: String, userName: String) {
+        updateViewArray.append((name,email,userName))
+    }
+    
+    
 }
