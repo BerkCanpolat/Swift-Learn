@@ -11,9 +11,7 @@ import XCTest
 final class ProtocolOriented_TestTests: XCTestCase {
     
     private var userViewModel : UserViewModel!
-    
     private var userService : MockUserService!
-    
     private var output : MockUserViewModelOutPut!
     
 
