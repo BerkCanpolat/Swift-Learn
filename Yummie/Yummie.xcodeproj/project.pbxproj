@@ -16,6 +16,7 @@
 		C0DE34B62D4653EA0071F89A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE34B52D4653EA0071F89A /* UIView+Extension.swift */; };
 		C0DE34B82D46566F0071F89A /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE34B72D46566F0071F89A /* OnboardingSlide.swift */; };
 		C0DE34BA2D4659D50071F89A /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE34B92D4659D50071F89A /* OnboardingCollectionViewCell.swift */; };
+		C0DE34BD2D468A240071F89A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE34BC2D468A240071F89A /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		C0DE34B52D4653EA0071F89A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		C0DE34B72D46566F0071F89A /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		C0DE34B92D4659D50071F89A /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		C0DE34BC2D468A240071F89A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		C0DE34AF2D4651090071F89A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C0DE34BB2D468A110071F89A /* Home */,
 				C0DE34B12D4651170071F89A /* Onboarding */,
 			);
 			path = View;
@@ -114,6 +117,14 @@
 				C0DE34B52D4653EA0071F89A /* UIView+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		C0DE34BB2D468A110071F89A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C0DE34BC2D468A240071F89A /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +203,7 @@
 				C0DE349D2D455B330071F89A /* SceneDelegate.swift in Sources */,
 				C0DE34B62D4653EA0071F89A /* UIView+Extension.swift in Sources */,
 				C0DE34B32D46516B0071F89A /* OnboardingViewController.swift in Sources */,
+				C0DE34BD2D468A240071F89A /* HomeViewController.swift in Sources */,
 				C0DE34BA2D4659D50071F89A /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
