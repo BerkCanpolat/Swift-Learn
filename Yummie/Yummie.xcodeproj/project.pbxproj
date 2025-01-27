@@ -28,6 +28,8 @@
 		C0DE34D42D46B57D0071F89A /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE34D32D46B57D0071F89A /* Dish.swift */; };
 		C0DE34D82D4782EC0071F89A /* DishLandScapeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0DE34D72D4782EC0071F89A /* DishLandScapeCollectionViewCell.xib */; };
 		C0DE34D92D4782EC0071F89A /* DishLandScapeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE34D62D4782EC0071F89A /* DishLandScapeCollectionViewCell.swift */; };
+		C0DE34DC2D47942E0071F89A /* DishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE34DB2D47942E0071F89A /* DishDetailViewController.swift */; };
+		C0DE34DE2D4798680071F89A /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE34DD2D4798680071F89A /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		C0DE34D32D46B57D0071F89A /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		C0DE34D62D4782EC0071F89A /* DishLandScapeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishLandScapeCollectionViewCell.swift; sourceTree = "<group>"; };
 		C0DE34D72D4782EC0071F89A /* DishLandScapeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishLandScapeCollectionViewCell.xib; sourceTree = "<group>"; };
+		C0DE34DB2D47942E0071F89A /* DishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailViewController.swift; sourceTree = "<group>"; };
+		C0DE34DD2D4798680071F89A /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 		C0DE34AF2D4651090071F89A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C0DE34DA2D4794100071F89A /* DishDetail */,
 				C0DE34BB2D468A110071F89A /* Home */,
 				C0DE34B12D4651170071F89A /* Onboarding */,
 			);
@@ -142,6 +147,7 @@
 			children = (
 				C0DE34B52D4653EA0071F89A /* UIView+Extension.swift */,
 				C0DE34C92D4693B70071F89A /* String+Extension.swift */,
+				C0DE34DD2D4798680071F89A /* UIViewController+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -197,6 +203,14 @@
 				C0DE34D72D4782EC0071F89A /* DishLandScapeCollectionViewCell.xib */,
 			);
 			path = DishLandScapeCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		C0DE34DA2D4794100071F89A /* DishDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C0DE34DB2D47942E0071F89A /* DishDetailViewController.swift */,
+			);
+			path = DishDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,12 +293,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0DE34DE2D4798680071F89A /* UIViewController+Extension.swift in Sources */,
 				C0DE34C32D468EE10071F89A /* CategoryCollectionViewCell.swift in Sources */,
 				C0DE34B82D46566F0071F89A /* OnboardingSlide.swift in Sources */,
 				C0DE349B2D455B330071F89A /* AppDelegate.swift in Sources */,
 				C0DE349D2D455B330071F89A /* SceneDelegate.swift in Sources */,
 				C0DE34B62D4653EA0071F89A /* UIView+Extension.swift in Sources */,
 				C0DE34B32D46516B0071F89A /* OnboardingViewController.swift in Sources */,
+				C0DE34DC2D47942E0071F89A /* DishDetailViewController.swift in Sources */,
 				C0DE34BD2D468A240071F89A /* HomeViewController.swift in Sources */,
 				C0DE34C52D4692E70071F89A /* DishCategory.swift in Sources */,
 				C0DE34CA2D4693B70071F89A /* String+Extension.swift in Sources */,
