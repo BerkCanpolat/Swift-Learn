@@ -13,8 +13,21 @@ struct NetworServiceManager {
     
     private init() {}
     
-    func myFirsRequest(completion: @escaping(Result<[Dish], Error>) -> Void) {
-        request(route: .temp, method: .get, completion: completion)
+    /*func myFirsRequest(completion: @escaping(Result<[Dish], Error>) -> Void) {
+        request(route: .fetchAllCategories, method: .get, completion: completion)
+    }*/
+    
+    func fetchAllCategories(completion: @escaping(Result<AllDishes,Error>) -> Void) {
+        request(route: .fetchAllCategories, method: .get, completion: completion)
+    }
+    
+    func placeOrder(dishId: String, name: String, completion: @escaping(Result<Order,Error>) -> Void) {
+        let params = ["name": name]
+        request(route: .placeOrder(dishId), method: .post, parameters: params, completion: completion)
+    }
+    
+    func fetchCategoryDishes(categoryId: String, completion: @escaping(Result<[Dish], Error>) -> Void) {
+        request(route: .fetchCategoryDishes(categoryId), method: .get, completion: completion)
     }
     
     private func request<T: Decodable>(route: Route, 

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ProgressHUD
 
 class DishListViewController: UIViewController {
     
@@ -19,19 +20,25 @@ class DishListViewController: UIViewController {
     
     var category: DishCategory?
     
-    var dish:[Dish] = [
-        .init(id: "id1", name: "Garri", description: "This is the best I have Ever Tasted", image: "https://picsum.photos/100/200", calories: 34),
-        .init(id: "id1", name: "Indomie", description: "This is the best I have Ever Tasted This is the best I have Ever Tasted This is the best I have Ever Tasted This is the best I have Ever Tasted This is the best I have Ever Tasted This is the best I have Ever Tasted This is the best I have Ever Tasted ", image: "https://picsum.photos/100/200", calories: 314),
-        .init(id: "id1", name: "Pizza", description: "This is the best I have Ever Tasted", image: "https://picsum.photos/100/200", calories: 66),
-        .init(id: "id1", name: "garri", description: "This is the best I have Ever Tasted", image: "https://picsum.photos/100/200", calories: 24),
-        .init(id: "id1", name: "garri", description: "This is the best I have Ever Tasted", image: "https://picsum.photos/100/200", calories: 43)
-    ]
+    var dish:[Dish] = []
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = category?.name
         registerCells()
+        
+        ProgressHUD.animate()
+        NetworServiceManager.shared.fetchCategoryDishes(categoryId: category?.id ?? "") { [weak self] result in
+            switch result {
+            case .success(let dishes):
+                ProgressHUD.dismiss()
+                self?.dish = dishes
+                self?.tableView.reloadData()
+            case .failure(let error):
+                ProgressHUD.error(error.localizedDescription)
+            }
+        }
     }
     
     private func registerCells() {

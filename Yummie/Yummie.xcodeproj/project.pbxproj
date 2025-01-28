@@ -40,6 +40,9 @@
 		C0DE34F32D48D0330071F89A /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE34F22D48D0330071F89A /* Method.swift */; };
 		C0DE34F52D48FBDD0071F89A /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE34F42D48FBDC0071F89A /* AppError.swift */; };
 		C0DE34F82D4906000071F89A /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE34F72D4906000071F89A /* ApiResponse.swift */; };
+		C0DE34FA2D4917140071F89A /* AllDishes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE34F92D4917140071F89A /* AllDishes.swift */; };
+		C0DE34FD2D4919020071F89A /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = C0DE34FC2D4919020071F89A /* ProgressHUD */; settings = {ATTRIBUTES = (Required, ); }; };
+		C0DE35002D49293A0071F89A /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C0DE34FF2D49293A0071F89A /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +80,7 @@
 		C0DE34F22D48D0330071F89A /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		C0DE34F42D48FBDC0071F89A /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		C0DE34F72D4906000071F89A /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		C0DE34F92D4917140071F89A /* AllDishes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDishes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0DE34C82D4693630071F89A /* Kingfisher in Frameworks */,
+				C0DE34FD2D4919020071F89A /* ProgressHUD in Frameworks */,
+				C0DE35002D49293A0071F89A /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +138,7 @@
 				C0DE34C42D4692E70071F89A /* DishCategory.swift */,
 				C0DE34D32D46B57D0071F89A /* Dish.swift */,
 				C0DE34EB2D47A6960071F89A /* Order.swift */,
+				C0DE34F92D4917140071F89A /* AllDishes.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -309,6 +316,8 @@
 			name = Yummie;
 			packageProductDependencies = (
 				C0DE34C72D4693630071F89A /* Kingfisher */,
+				C0DE34FC2D4919020071F89A /* ProgressHUD */,
+				C0DE34FF2D49293A0071F89A /* IQKeyboardManagerSwift */,
 			);
 			productName = Yummie;
 			productReference = C0DE34972D455B330071F89A /* Yummie.app */;
@@ -340,6 +349,8 @@
 			mainGroup = C0DE348E2D455B330071F89A;
 			packageReferences = (
 				C0DE34C62D4693630071F89A /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				C0DE34FB2D4919020071F89A /* XCRemoteSwiftPackageReference "ProgressHUD" */,
+				C0DE34FE2D49293A0071F89A /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = C0DE34982D455B330071F89A /* Products */;
 			projectDirPath = "";
@@ -379,6 +390,7 @@
 				C0DE34E72D47A12E0071F89A /* DishListViewController.swift in Sources */,
 				C0DE34C32D468EE10071F89A /* CategoryCollectionViewCell.swift in Sources */,
 				C0DE34B82D46566F0071F89A /* OnboardingSlide.swift in Sources */,
+				C0DE34FA2D4917140071F89A /* AllDishes.swift in Sources */,
 				C0DE349B2D455B330071F89A /* AppDelegate.swift in Sources */,
 				C0DE34F32D48D0330071F89A /* Method.swift in Sources */,
 				C0DE349D2D455B330071F89A /* SceneDelegate.swift in Sources */,
@@ -629,6 +641,22 @@
 				minimumVersion = 8.1.3;
 			};
 		};
+		C0DE34FB2D4919020071F89A /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/relatedcode/ProgressHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.1.3;
+			};
+		};
+		C0DE34FE2D49293A0071F89A /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -636,6 +664,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C0DE34C62D4693630071F89A /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		C0DE34FC2D4919020071F89A /* ProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0DE34FB2D4919020071F89A /* XCRemoteSwiftPackageReference "ProgressHUD" */;
+			productName = ProgressHUD;
+		};
+		C0DE34FF2D49293A0071F89A /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0DE34FE2D49293A0071F89A /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

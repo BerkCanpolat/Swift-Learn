@@ -18,7 +18,9 @@ class DishPortraitCollectionViewCell: UICollectionViewCell {
     
     func setup(dish:Dish) {
         titleLbl.text = dish.name
-        dishImageView.kf.setImage(with: dish.image?.asUrl)
+        dishImageView.kf.setImage(
+            with: dish.image?.asUrl
+        )
         caloriesLbl.text = dish.formattedCalories
         descriptionLbl.text = dish.description
     }
