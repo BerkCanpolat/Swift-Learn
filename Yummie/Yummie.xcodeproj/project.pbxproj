@@ -38,6 +38,8 @@
 		C0DE34EF2D48CEDC0071F89A /* NetworServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE34EE2D48CEDC0071F89A /* NetworServiceManager.swift */; };
 		C0DE34F12D48CFA00071F89A /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE34F02D48CFA00071F89A /* Route.swift */; };
 		C0DE34F32D48D0330071F89A /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE34F22D48D0330071F89A /* Method.swift */; };
+		C0DE34F52D48FBDD0071F89A /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE34F42D48FBDC0071F89A /* AppError.swift */; };
+		C0DE34F82D4906000071F89A /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE34F72D4906000071F89A /* ApiResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +75,8 @@
 		C0DE34EE2D48CEDC0071F89A /* NetworServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworServiceManager.swift; sourceTree = "<group>"; };
 		C0DE34F02D48CFA00071F89A /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		C0DE34F22D48D0330071F89A /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		C0DE34F42D48FBDC0071F89A /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		C0DE34F72D4906000071F89A /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,11 +274,21 @@
 		C0DE34ED2D48CEA80071F89A /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				C0DE34F62D4905E10071F89A /* New Group */,
 				C0DE34EE2D48CEDC0071F89A /* NetworServiceManager.swift */,
 				C0DE34F02D48CFA00071F89A /* Route.swift */,
 				C0DE34F22D48D0330071F89A /* Method.swift */,
+				C0DE34F42D48FBDC0071F89A /* AppError.swift */,
+				C0DE34F72D4906000071F89A /* ApiResponse.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		C0DE34F62D4905E10071F89A /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,6 +385,7 @@
 				C0DE34B62D4653EA0071F89A /* UIView+Extension.swift in Sources */,
 				C0DE34B32D46516B0071F89A /* OnboardingViewController.swift in Sources */,
 				C0DE34DC2D47942E0071F89A /* DishDetailViewController.swift in Sources */,
+				C0DE34F82D4906000071F89A /* ApiResponse.swift in Sources */,
 				C0DE34BD2D468A240071F89A /* HomeViewController.swift in Sources */,
 				C0DE34F12D48CFA00071F89A /* Route.swift in Sources */,
 				C0DE34C52D4692E70071F89A /* DishCategory.swift in Sources */,
@@ -378,6 +393,7 @@
 				C0DE34CA2D4693B70071F89A /* String+Extension.swift in Sources */,
 				C0DE34CD2D4697E10071F89A /* CardView.swift in Sources */,
 				C0DE34BA2D4659D50071F89A /* OnboardingCollectionViewCell.swift in Sources */,
+				C0DE34F52D48FBDD0071F89A /* AppError.swift in Sources */,
 				C0DE34D42D46B57D0071F89A /* Dish.swift in Sources */,
 				C0DE34D92D4782EC0071F89A /* DishLandScapeCollectionViewCell.swift in Sources */,
 				C0DE34D22D46B3A60071F89A /* DishPortraitCollectionViewCell.swift in Sources */,
