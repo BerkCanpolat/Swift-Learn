@@ -32,6 +32,7 @@ class UpcomingTableViewCell: UITableViewCell {
         image.contentMode = .scaleAspectFill
         image.translatesAutoresizingMaskIntoConstraints = false
         image.clipsToBounds = true
+        image.layer.cornerRadius = 5
         return image
     }()
     
