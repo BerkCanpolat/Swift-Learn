@@ -14,6 +14,7 @@
 		C063810A2B0B9BF4001BC5FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06381082B0B9BF4001BC5FC /* LaunchScreen.storyboard */; };
 		C09196812D660A3A00B78BCB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09196802D660A3A00B78BCB /* SearchViewController.swift */; };
 		C09196862D69E77C00B78BCB /* ScrollViewOneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09196852D69E77C00B78BCB /* ScrollViewOneController.swift */; };
+		C09196892D6A001B00B78BCB /* ScrollViewTwoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09196882D6A001B00B78BCB /* ScrollViewTwoController.swift */; };
 		C09819562B0BE9F500AB6199 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09819552B0BE9F500AB6199 /* CustomTextField.swift */; };
 		C09819592B0BEBF900AB6199 /* View+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09819582B0BEBF900AB6199 /* View+ext.swift */; };
 		C098195B2B0BF69300AB6199 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C098195A2B0BF69300AB6199 /* HomePageVC.swift */; };
@@ -31,6 +32,7 @@
 		C063810B2B0B9BF4001BC5FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C09196802D660A3A00B78BCB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C09196852D69E77C00B78BCB /* ScrollViewOneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewOneController.swift; sourceTree = "<group>"; };
+		C09196882D6A001B00B78BCB /* ScrollViewTwoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewTwoController.swift; sourceTree = "<group>"; };
 		C09819552B0BE9F500AB6199 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		C09819582B0BEBF900AB6199 /* View+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ext.swift"; sourceTree = "<group>"; };
 		C098195A2B0BF69300AB6199 /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 		C06380FC2B0B9BF2001BC5FC /* ProgrammaticUILearn */ = {
 			isa = PBXGroup;
 			children = (
+				C09196872D6A000D00B78BCB /* ScrollViewProgramaticTwo */,
 				C09196842D69DAB800B78BCB /* ScrollViewProgramaticOne */,
 				C091967F2D660A2800B78BCB /* SearchProgramatic */,
 				C098195E2B0BFAA900AB6199 /* MockModel */,
@@ -99,6 +102,14 @@
 				C09196852D69E77C00B78BCB /* ScrollViewOneController.swift */,
 			);
 			path = ScrollViewProgramaticOne;
+			sourceTree = "<group>";
+		};
+		C09196872D6A000D00B78BCB /* ScrollViewProgramaticTwo */ = {
+			isa = PBXGroup;
+			children = (
+				C09196882D6A001B00B78BCB /* ScrollViewTwoController.swift */,
+			);
+			path = ScrollViewProgramaticTwo;
 			sourceTree = "<group>";
 		};
 		C09819532B0BE9CC00AB6199 /* Views */ = {
@@ -213,6 +224,7 @@
 				C06381002B0B9BF2001BC5FC /* SceneDelegate.swift in Sources */,
 				C09196862D69E77C00B78BCB /* ScrollViewOneController.swift in Sources */,
 				C09819602B0BFAB800AB6199 /* Mock.swift in Sources */,
+				C09196892D6A001B00B78BCB /* ScrollViewTwoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

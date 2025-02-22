@@ -63,6 +63,7 @@ class ScrollViewOneController: UIViewController {
             contentView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
             
             contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor, constant: -20),
+            hConst
             //contentView.heightAnchor.constraint(equalTo: scrollView.heightAnchor)
         ])
         
