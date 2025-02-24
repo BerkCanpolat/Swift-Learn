@@ -18,6 +18,7 @@
 		C091968C2D6A29B100B78BCB /* AutoLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C091968B2D6A29B100B78BCB /* AutoLayoutController.swift */; };
 		C09196932D6CBC7200B78BCB /* SegmentedControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09196922D6CBC7200B78BCB /* SegmentedControlViewController.swift */; };
 		C09196962D6CC90B00B78BCB /* OnboardingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09196952D6CC90B00B78BCB /* OnboardingScreenViewController.swift */; };
+		C09196982D6D0CF000B78BCB /* SwippingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09196972D6D0CF000B78BCB /* SwippingController.swift */; };
 		C09819562B0BE9F500AB6199 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09819552B0BE9F500AB6199 /* CustomTextField.swift */; };
 		C09819592B0BEBF900AB6199 /* View+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09819582B0BEBF900AB6199 /* View+ext.swift */; };
 		C098195B2B0BF69300AB6199 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C098195A2B0BF69300AB6199 /* HomePageVC.swift */; };
@@ -39,6 +40,7 @@
 		C091968B2D6A29B100B78BCB /* AutoLayoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutController.swift; sourceTree = "<group>"; };
 		C09196922D6CBC7200B78BCB /* SegmentedControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlViewController.swift; sourceTree = "<group>"; };
 		C09196952D6CC90B00B78BCB /* OnboardingScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreenViewController.swift; sourceTree = "<group>"; };
+		C09196972D6D0CF000B78BCB /* SwippingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwippingController.swift; sourceTree = "<group>"; };
 		C09819552B0BE9F500AB6199 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		C09819582B0BEBF900AB6199 /* View+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ext.swift"; sourceTree = "<group>"; };
 		C098195A2B0BF69300AB6199 /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				C09196952D6CC90B00B78BCB /* OnboardingScreenViewController.swift */,
+				C09196972D6D0CF000B78BCB /* SwippingController.swift */,
 			);
 			path = OnboardingProgramatic;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				C09196962D6CC90B00B78BCB /* OnboardingScreenViewController.swift in Sources */,
 				C098195D2B0BFA0200AB6199 /* TableViewCell.swift in Sources */,
 				C06381002B0B9BF2001BC5FC /* SceneDelegate.swift in Sources */,
+				C09196982D6D0CF000B78BCB /* SwippingController.swift in Sources */,
 				C091968C2D6A29B100B78BCB /* AutoLayoutController.swift in Sources */,
 				C09196862D69E77C00B78BCB /* ScrollViewOneController.swift in Sources */,
 				C09819602B0BFAB800AB6199 /* Mock.swift in Sources */,
