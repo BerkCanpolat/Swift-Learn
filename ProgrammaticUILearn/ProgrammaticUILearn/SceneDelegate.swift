@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let windows = UIWindow(windowScene: windowScene)
         windows.makeKeyAndVisible()
         //windows.overrideUserInterfaceStyle = .light
-        windows.rootViewController = UINavigationController(rootViewController: SegmentedControlViewController())
+        windows.rootViewController = UINavigationController(rootViewController: OnboardingScreenViewController())
         self.window = windows
         
     }
