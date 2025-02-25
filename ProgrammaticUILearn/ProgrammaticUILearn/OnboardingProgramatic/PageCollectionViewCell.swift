@@ -9,6 +9,28 @@ import UIKit
 
 class PageCollectionViewCell: UICollectionViewCell {
     
+    static let identifier = "PageCollectionViewCell"
+    
+    var page: Page? {
+        didSet {
+            print(page?.imageName ?? "")
+            print(page?.headerText ?? "")
+            bearImageView.image = UIImage(named: page?.imageName ?? "")
+            
+            let attributedText = NSMutableAttributedString(string: page?.headerText ?? "", attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 18)])
+            
+            let additionalText = NSAttributedString(string: page?.bodyText ?? "", attributes: [
+                    NSAttributedString.Key.font: UIFont.systemFont(ofSize: 13),
+                    NSAttributedString.Key.foregroundColor: UIColor.gray
+                ])
+            attributedText.append(additionalText)
+            descriptionTextView.attributedText = attributedText
+            descriptionTextView.textAlignment = .center
+            
+            
+        }
+    }
+    
     private lazy var bearImageView: UIImageView = {
         var img = UIImage(named: "1")
         let imageView = UIImageView(image: img)
