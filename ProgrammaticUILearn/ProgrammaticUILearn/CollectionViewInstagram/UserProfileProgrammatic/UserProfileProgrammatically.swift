@@ -13,7 +13,7 @@ class UserProfileProgrammatically: UIViewController {
     lazy var containerView: UIView = {
        let view = UIView()
         view.backgroundColor = .systemBlue
-        
+        view.layer.cornerRadius = 10
         view.addSubview(profileImageView)
         profileImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         profileImageView.anchor(top: view.topAnchor, paddingTop: 54, width: 120, height: 120)

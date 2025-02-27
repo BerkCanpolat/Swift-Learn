@@ -18,13 +18,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let windows = UIWindow(windowScene: windowScene)
         windows.makeKeyAndVisible()
         //windows.overrideUserInterfaceStyle = .light
-        windows.rootViewController = UINavigationController(rootViewController: UserProfileProgrammatically())
+        //windows.rootViewController = UINavigationController(rootViewController: UserProfileProgrammatically())
         
         /// UICollectionView - One Projects
         //let layout = UICollectionViewFlowLayout()
         //layout.scrollDirection = .horizontal
         //let swipingController = SwippingController(collectionViewLayout: layout)
         //windows.rootViewController = swipingController
+        
+        /// UICollectionView - Two Projects
+        let layout = UICollectionViewFlowLayout()
+        windows.rootViewController = CollectionInstagramProgrammatically(collectionViewLayout: layout)
         self.window = windows
         
     }
