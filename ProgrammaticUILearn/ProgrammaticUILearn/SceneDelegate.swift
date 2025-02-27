@@ -18,13 +18,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let windows = UIWindow(windowScene: windowScene)
         windows.makeKeyAndVisible()
         //windows.overrideUserInterfaceStyle = .light
-        //windows.rootViewController = UINavigationController(rootViewController: OnboardingScreenViewController())
+        windows.rootViewController = UINavigationController(rootViewController: UserProfileProgrammatically())
         
         /// UICollectionView - One Projects
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
-        let swipingController = SwippingController(collectionViewLayout: layout)
-        windows.rootViewController = swipingController
+        //let layout = UICollectionViewFlowLayout()
+        //layout.scrollDirection = .horizontal
+        //let swipingController = SwippingController(collectionViewLayout: layout)
+        //windows.rootViewController = swipingController
         self.window = windows
         
     }
