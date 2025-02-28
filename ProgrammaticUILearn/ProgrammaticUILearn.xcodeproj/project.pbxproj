@@ -26,6 +26,9 @@
 		C09196A42D70EC2D00B78BCB /* ProfileHaeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09196A32D70EC2D00B78BCB /* ProfileHaeader.swift */; };
 		C09196A62D70F42F00B78BCB /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09196A52D70F42F00B78BCB /* ProfileCell.swift */; };
 		C09196A92D7251AC00B78BCB /* SnapchatProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09196A82D7251AC00B78BCB /* SnapchatProfileViewController.swift */; };
+		C09196AF2D72633000B78BCB /* UserInfoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09196AE2D72633000B78BCB /* UserInfoHeader.swift */; };
+		C09196B12D72635100B78BCB /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09196B02D72635100B78BCB /* SettingsTableViewCell.swift */; };
+		C09196B32D72636600B78BCB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09196B22D72636600B78BCB /* SettingsViewController.swift */; };
 		C09819562B0BE9F500AB6199 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09819552B0BE9F500AB6199 /* CustomTextField.swift */; };
 		C09819592B0BEBF900AB6199 /* View+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09819582B0BEBF900AB6199 /* View+ext.swift */; };
 		C098195B2B0BF69300AB6199 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C098195A2B0BF69300AB6199 /* HomePageVC.swift */; };
@@ -55,6 +58,9 @@
 		C09196A32D70EC2D00B78BCB /* ProfileHaeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHaeader.swift; sourceTree = "<group>"; };
 		C09196A52D70F42F00B78BCB /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		C09196A82D7251AC00B78BCB /* SnapchatProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapchatProfileViewController.swift; sourceTree = "<group>"; };
+		C09196AE2D72633000B78BCB /* UserInfoHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoHeader.swift; sourceTree = "<group>"; };
+		C09196B02D72635100B78BCB /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		C09196B22D72636600B78BCB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C09819552B0BE9F500AB6199 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		C09819582B0BEBF900AB6199 /* View+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ext.swift"; sourceTree = "<group>"; };
 		C098195A2B0BF69300AB6199 /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
@@ -92,6 +98,7 @@
 		C06380FC2B0B9BF2001BC5FC /* ProgrammaticUILearn */ = {
 			isa = PBXGroup;
 			children = (
+				C09196AA2D7262FE00B78BCB /* SettingsPageTableProgrammatic */,
 				C09196A72D7251A100B78BCB /* SnapchatProfileProgrammaticui */,
 				C091969D2D7078E000B78BCB /* CollectionViewInstagram */,
 				C09196942D6CC8FA00B78BCB /* OnboardingProgramatic */,
@@ -191,6 +198,40 @@
 				C09196A82D7251AC00B78BCB /* SnapchatProfileViewController.swift */,
 			);
 			path = SnapchatProfileProgrammaticui;
+			sourceTree = "<group>";
+		};
+		C09196AA2D7262FE00B78BCB /* SettingsPageTableProgrammatic */ = {
+			isa = PBXGroup;
+			children = (
+				C09196AD2D72631E00B78BCB /* Controller */,
+				C09196AC2D72631A00B78BCB /* View */,
+				C09196AB2D72631400B78BCB /* Model */,
+			);
+			path = SettingsPageTableProgrammatic;
+			sourceTree = "<group>";
+		};
+		C09196AB2D72631400B78BCB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C09196AC2D72631A00B78BCB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C09196AE2D72633000B78BCB /* UserInfoHeader.swift */,
+				C09196B02D72635100B78BCB /* SettingsTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C09196AD2D72631E00B78BCB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C09196B22D72636600B78BCB /* SettingsViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		C09819532B0BE9CC00AB6199 /* Views */ = {
@@ -297,15 +338,18 @@
 			files = (
 				C09819562B0BE9F500AB6199 /* CustomTextField.swift in Sources */,
 				C09196932D6CBC7200B78BCB /* SegmentedControlViewController.swift in Sources */,
+				C09196B12D72635100B78BCB /* SettingsTableViewCell.swift in Sources */,
 				C09196A42D70EC2D00B78BCB /* ProfileHaeader.swift in Sources */,
 				C06381022B0B9BF2001BC5FC /* ViewController.swift in Sources */,
 				C098195B2B0BF69300AB6199 /* HomePageVC.swift in Sources */,
 				C09196812D660A3A00B78BCB /* SearchViewController.swift in Sources */,
 				C09196A62D70F42F00B78BCB /* ProfileCell.swift in Sources */,
+				C09196B32D72636600B78BCB /* SettingsViewController.swift in Sources */,
 				C091969C2D6E37F000B78BCB /* Page.swift in Sources */,
 				C09819592B0BEBF900AB6199 /* View+ext.swift in Sources */,
 				C06380FE2B0B9BF2001BC5FC /* AppDelegate.swift in Sources */,
 				C09196A22D70E4EB00B78BCB /* CollectionInstagramViewController.swift in Sources */,
+				C09196AF2D72633000B78BCB /* UserInfoHeader.swift in Sources */,
 				C09196962D6CC90B00B78BCB /* OnboardingScreenViewController.swift in Sources */,
 				C098195D2B0BFA0200AB6199 /* TableViewCell.swift in Sources */,
 				C06381002B0B9BF2001BC5FC /* SceneDelegate.swift in Sources */,
