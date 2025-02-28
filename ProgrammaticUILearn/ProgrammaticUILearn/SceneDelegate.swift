@@ -17,8 +17,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let windows = UIWindow(windowScene: windowScene)
         windows.makeKeyAndVisible()
-        //windows.overrideUserInterfaceStyle = .light
-        //windows.rootViewController = UINavigationController(rootViewController: UserProfileProgrammatically())
+        windows.overrideUserInterfaceStyle = .light
+        windows.rootViewController = UINavigationController(rootViewController: SnapchatProfileViewController())
         
         /// UICollectionView - One Projects
         //let layout = UICollectionViewFlowLayout()
@@ -27,8 +27,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         //windows.rootViewController = swipingController
         
         /// UICollectionView - Two Projects
-        let layout = UICollectionViewFlowLayout()
-        windows.rootViewController = CollectionInstagramProgrammatically(collectionViewLayout: layout)
+        //let layout = UICollectionViewFlowLayout()
+        //windows.rootViewController = CollectionInstagramProgrammatically(collectionViewLayout: layout)
         self.window = windows
         
     }

@@ -25,6 +25,7 @@
 		C09196A22D70E4EB00B78BCB /* CollectionInstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09196A12D70E4EB00B78BCB /* CollectionInstagramViewController.swift */; };
 		C09196A42D70EC2D00B78BCB /* ProfileHaeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09196A32D70EC2D00B78BCB /* ProfileHaeader.swift */; };
 		C09196A62D70F42F00B78BCB /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09196A52D70F42F00B78BCB /* ProfileCell.swift */; };
+		C09196A92D7251AC00B78BCB /* SnapchatProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09196A82D7251AC00B78BCB /* SnapchatProfileViewController.swift */; };
 		C09819562B0BE9F500AB6199 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09819552B0BE9F500AB6199 /* CustomTextField.swift */; };
 		C09819592B0BEBF900AB6199 /* View+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09819582B0BEBF900AB6199 /* View+ext.swift */; };
 		C098195B2B0BF69300AB6199 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C098195A2B0BF69300AB6199 /* HomePageVC.swift */; };
@@ -53,6 +54,7 @@
 		C09196A12D70E4EB00B78BCB /* CollectionInstagramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionInstagramViewController.swift; sourceTree = "<group>"; };
 		C09196A32D70EC2D00B78BCB /* ProfileHaeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHaeader.swift; sourceTree = "<group>"; };
 		C09196A52D70F42F00B78BCB /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		C09196A82D7251AC00B78BCB /* SnapchatProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapchatProfileViewController.swift; sourceTree = "<group>"; };
 		C09819552B0BE9F500AB6199 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		C09819582B0BEBF900AB6199 /* View+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ext.swift"; sourceTree = "<group>"; };
 		C098195A2B0BF69300AB6199 /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		C06380FC2B0B9BF2001BC5FC /* ProgrammaticUILearn */ = {
 			isa = PBXGroup;
 			children = (
+				C09196A72D7251A100B78BCB /* SnapchatProfileProgrammaticui */,
 				C091969D2D7078E000B78BCB /* CollectionViewInstagram */,
 				C09196942D6CC8FA00B78BCB /* OnboardingProgramatic */,
 				C09196912D6CBC5800B78BCB /* UISegmentedControlProgramatic */,
@@ -180,6 +183,14 @@
 				C091969E2D70790700B78BCB /* UserProfileProgrammatically.swift */,
 			);
 			path = UserProfileProgrammatic;
+			sourceTree = "<group>";
+		};
+		C09196A72D7251A100B78BCB /* SnapchatProfileProgrammaticui */ = {
+			isa = PBXGroup;
+			children = (
+				C09196A82D7251AC00B78BCB /* SnapchatProfileViewController.swift */,
+			);
+			path = SnapchatProfileProgrammaticui;
 			sourceTree = "<group>";
 		};
 		C09819532B0BE9CC00AB6199 /* Views */ = {
@@ -304,6 +315,7 @@
 				C091968C2D6A29B100B78BCB /* AutoLayoutController.swift in Sources */,
 				C09196862D69E77C00B78BCB /* ScrollViewOneController.swift in Sources */,
 				C09819602B0BFAB800AB6199 /* Mock.swift in Sources */,
+				C09196A92D7251AC00B78BCB /* SnapchatProfileViewController.swift in Sources */,
 				C09196892D6A001B00B78BCB /* ScrollViewTwoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
