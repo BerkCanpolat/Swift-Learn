@@ -17,8 +17,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let windows = UIWindow(windowScene: windowScene)
         windows.makeKeyAndVisible()
-        windows.overrideUserInterfaceStyle = .light
-        windows.rootViewController = UINavigationController(rootViewController: SnapchatProfileViewController())
+        //windows.overrideUserInterfaceStyle = .light
+        windows.rootViewController = UINavigationController(rootViewController: SettingsViewController())
         
         /// UICollectionView - One Projects
         //let layout = UICollectionViewFlowLayout()
