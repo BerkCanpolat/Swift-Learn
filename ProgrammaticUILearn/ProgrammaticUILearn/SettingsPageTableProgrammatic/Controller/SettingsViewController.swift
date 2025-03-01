@@ -13,6 +13,7 @@ class SettingsViewController: UIViewController {
     
     var tableView: UITableView!
     var userInfoHeader: UserInfoHeader!
+    var refreshControl = UIRefreshControl()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +35,17 @@ class SettingsViewController: UIViewController {
         userInfoHeader = UserInfoHeader(frame: frame)
         tableView.tableHeaderView = userInfoHeader
         tableView.tableFooterView = UIView()
+        
+        refreshControl.addTarget(self, action: #selector(refresh), for: UIControl.Event.valueChanged)
+        tableView.addSubview(refreshControl)
+    }
+    
+    @objc func refresh(send: UIRefreshControl) {
+        DispatchQueue.main.async {
+            
+            self.tableView.reloadData()
+            self.refreshControl.endRefreshing()
+        }
     }
     
     func configureUI() {
