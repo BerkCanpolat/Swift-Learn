@@ -26,11 +26,14 @@ class NavigationViewController: UIViewController {
     
     @objc func didTapButton() {
         let destinateVC = SecondViewController()
-        //destinateVC.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Dismiss", style: .plain, target: self, action: #selector(dismissSelf))
         let navVC = UINavigationController(rootViewController: destinateVC)
         
         navVC.modalPresentationStyle = .fullScreen
         present(navVC, animated: true)
+        
+        //let den = SecondViewController()
+        
+        //navigationController?.pushViewController(den, animated: true)
     }
 }
 
@@ -60,12 +63,32 @@ class SecondViewController: UIViewController {
     }
     
     @objc private func didTapButton() {
-        let vc = UIViewController()
-        vc.view.backgroundColor = .white
+        let vc = ThreeViewControllerPage()
         navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc private func dismissSelf() {
         dismiss(animated: true, completion: nil)
+    }
+}
+
+
+class ThreeViewControllerPage: UIViewController {
+        
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.backgroundColor = .systemBrown
+        
+        navigationItem.title = "Three View"
+        
+        navigationController?.navigationBar.backgroundColor = .white
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.red]
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Dismiss", style: .plain, target: self, action: #selector(dismissSelf))
+    }
+    
+    @objc private func dismissSelf() {
+        //navigationController?.popViewController(animated: true)
+        navigationController?.popToRootViewController(animated: true)
     }
 }

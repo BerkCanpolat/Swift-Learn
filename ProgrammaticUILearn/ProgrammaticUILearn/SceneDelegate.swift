@@ -18,7 +18,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let windows = UIWindow(windowScene: windowScene)
         windows.makeKeyAndVisible()
         //windows.overrideUserInterfaceStyle = .light
-        windows.rootViewController = UINavigationController(rootViewController: NavigationViewController())
+        //windows.rootViewController = UINavigationController(rootViewController: NavigationViewController())
+        windows.rootViewController = FollowViewController()
         
         /// UICollectionView - One Projects
         //let layout = UICollectionViewFlowLayout()
@@ -29,6 +30,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         /// UICollectionView - Two Projects
         //let layout = UICollectionViewFlowLayout()
         //windows.rootViewController = CollectionInstagramProgrammatically(collectionViewLayout: layout)
+        
         self.window = windows
         
     }

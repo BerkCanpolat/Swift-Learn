@@ -31,6 +31,10 @@
 		C09196B32D72636600B78BCB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09196B22D72636600B78BCB /* SettingsViewController.swift */; };
 		C09196B52D7322A400B78BCB /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09196B42D7322A400B78BCB /* SettingsSection.swift */; };
 		C09196B82D7334C200B78BCB /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09196B72D7334C200B78BCB /* NavigationViewController.swift */; };
+		C09196BF2D73658200B78BCB /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09196BE2D73658200B78BCB /* FollowViewController.swift */; };
+		C09196C12D73659D00B78BCB /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09196C02D73659D00B78BCB /* UserModel.swift */; };
+		C09196C32D7365EE00B78BCB /* FollowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09196C22D7365EE00B78BCB /* FollowTableViewCell.swift */; };
+		C09196C52D73697A00B78BCB /* FollowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09196C42D73697A00B78BCB /* FollowExtension.swift */; };
 		C09819562B0BE9F500AB6199 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09819552B0BE9F500AB6199 /* CustomTextField.swift */; };
 		C09819592B0BEBF900AB6199 /* View+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09819582B0BEBF900AB6199 /* View+ext.swift */; };
 		C098195B2B0BF69300AB6199 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C098195A2B0BF69300AB6199 /* HomePageVC.swift */; };
@@ -65,6 +69,10 @@
 		C09196B22D72636600B78BCB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C09196B42D7322A400B78BCB /* SettingsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSection.swift; sourceTree = "<group>"; };
 		C09196B72D7334C200B78BCB /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		C09196BE2D73658200B78BCB /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
+		C09196C02D73659D00B78BCB /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C09196C22D7365EE00B78BCB /* FollowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowTableViewCell.swift; sourceTree = "<group>"; };
+		C09196C42D73697A00B78BCB /* FollowExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowExtension.swift; sourceTree = "<group>"; };
 		C09819552B0BE9F500AB6199 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		C09819582B0BEBF900AB6199 /* View+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ext.swift"; sourceTree = "<group>"; };
 		C098195A2B0BF69300AB6199 /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
@@ -102,6 +110,7 @@
 		C06380FC2B0B9BF2001BC5FC /* ProgrammaticUILearn */ = {
 			isa = PBXGroup;
 			children = (
+				C09196B92D73652400B78BCB /* FollowProtocolProgramatic */,
 				C09196B62D7334B100B78BCB /* NavigationProgramaticaly */,
 				C09196AA2D7262FE00B78BCB /* SettingsPageTableProgrammatic */,
 				C09196A72D7251A100B78BCB /* SnapchatProfileProgrammaticui */,
@@ -248,6 +257,49 @@
 			path = NavigationProgramaticaly;
 			sourceTree = "<group>";
 		};
+		C09196B92D73652400B78BCB /* FollowProtocolProgramatic */ = {
+			isa = PBXGroup;
+			children = (
+				C09196BD2D73656F00B78BCB /* Controller */,
+				C09196BC2D73656D00B78BCB /* View */,
+				C09196BB2D73656700B78BCB /* Model */,
+				C09196BA2D73656200B78BCB /* Utils */,
+			);
+			path = FollowProtocolProgramatic;
+			sourceTree = "<group>";
+		};
+		C09196BA2D73656200B78BCB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C09196C42D73697A00B78BCB /* FollowExtension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C09196BB2D73656700B78BCB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C09196C02D73659D00B78BCB /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C09196BC2D73656D00B78BCB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C09196C22D7365EE00B78BCB /* FollowTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C09196BD2D73656F00B78BCB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C09196BE2D73658200B78BCB /* FollowViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		C09819532B0BE9CC00AB6199 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -353,6 +405,7 @@
 				C09819562B0BE9F500AB6199 /* CustomTextField.swift in Sources */,
 				C09196932D6CBC7200B78BCB /* SegmentedControlViewController.swift in Sources */,
 				C09196B12D72635100B78BCB /* SettingsTableViewCell.swift in Sources */,
+				C09196C12D73659D00B78BCB /* UserModel.swift in Sources */,
 				C09196A42D70EC2D00B78BCB /* ProfileHaeader.swift in Sources */,
 				C06381022B0B9BF2001BC5FC /* ViewController.swift in Sources */,
 				C098195B2B0BF69300AB6199 /* HomePageVC.swift in Sources */,
@@ -377,6 +430,9 @@
 				C09819602B0BFAB800AB6199 /* Mock.swift in Sources */,
 				C09196A92D7251AC00B78BCB /* SnapchatProfileViewController.swift in Sources */,
 				C09196892D6A001B00B78BCB /* ScrollViewTwoController.swift in Sources */,
+				C09196C32D7365EE00B78BCB /* FollowTableViewCell.swift in Sources */,
+				C09196C52D73697A00B78BCB /* FollowExtension.swift in Sources */,
+				C09196BF2D73658200B78BCB /* FollowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
