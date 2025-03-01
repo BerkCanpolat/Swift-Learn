@@ -30,6 +30,7 @@
 		C09196B12D72635100B78BCB /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09196B02D72635100B78BCB /* SettingsTableViewCell.swift */; };
 		C09196B32D72636600B78BCB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09196B22D72636600B78BCB /* SettingsViewController.swift */; };
 		C09196B52D7322A400B78BCB /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09196B42D7322A400B78BCB /* SettingsSection.swift */; };
+		C09196B82D7334C200B78BCB /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09196B72D7334C200B78BCB /* NavigationViewController.swift */; };
 		C09819562B0BE9F500AB6199 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09819552B0BE9F500AB6199 /* CustomTextField.swift */; };
 		C09819592B0BEBF900AB6199 /* View+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09819582B0BEBF900AB6199 /* View+ext.swift */; };
 		C098195B2B0BF69300AB6199 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C098195A2B0BF69300AB6199 /* HomePageVC.swift */; };
@@ -63,6 +64,7 @@
 		C09196B02D72635100B78BCB /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		C09196B22D72636600B78BCB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C09196B42D7322A400B78BCB /* SettingsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSection.swift; sourceTree = "<group>"; };
+		C09196B72D7334C200B78BCB /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		C09819552B0BE9F500AB6199 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		C09819582B0BEBF900AB6199 /* View+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ext.swift"; sourceTree = "<group>"; };
 		C098195A2B0BF69300AB6199 /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		C06380FC2B0B9BF2001BC5FC /* ProgrammaticUILearn */ = {
 			isa = PBXGroup;
 			children = (
+				C09196B62D7334B100B78BCB /* NavigationProgramaticaly */,
 				C09196AA2D7262FE00B78BCB /* SettingsPageTableProgrammatic */,
 				C09196A72D7251A100B78BCB /* SnapchatProfileProgrammaticui */,
 				C091969D2D7078E000B78BCB /* CollectionViewInstagram */,
@@ -237,6 +240,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		C09196B62D7334B100B78BCB /* NavigationProgramaticaly */ = {
+			isa = PBXGroup;
+			children = (
+				C09196B72D7334C200B78BCB /* NavigationViewController.swift */,
+			);
+			path = NavigationProgramaticaly;
+			sourceTree = "<group>";
+		};
 		C09819532B0BE9CC00AB6199 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -351,6 +362,7 @@
 				C091969C2D6E37F000B78BCB /* Page.swift in Sources */,
 				C09819592B0BEBF900AB6199 /* View+ext.swift in Sources */,
 				C06380FE2B0B9BF2001BC5FC /* AppDelegate.swift in Sources */,
+				C09196B82D7334C200B78BCB /* NavigationViewController.swift in Sources */,
 				C09196A22D70E4EB00B78BCB /* CollectionInstagramViewController.swift in Sources */,
 				C09196AF2D72633000B78BCB /* UserInfoHeader.swift in Sources */,
 				C09196B52D7322A400B78BCB /* SettingsSection.swift in Sources */,

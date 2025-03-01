@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let windows = UIWindow(windowScene: windowScene)
         windows.makeKeyAndVisible()
         //windows.overrideUserInterfaceStyle = .light
-        windows.rootViewController = UINavigationController(rootViewController: SettingsViewController())
+        windows.rootViewController = UINavigationController(rootViewController: NavigationViewController())
         
         /// UICollectionView - One Projects
         //let layout = UICollectionViewFlowLayout()
