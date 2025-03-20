@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  ProgrammaticUILearn
+//  WeatherAppProgramatic
 //
-//  Created by Berk Canpolat on 20.11.2023.
+//  Created by Berk Canpolat on 20.03.2025.
 //
 
 import UIKit
@@ -13,25 +13,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
+        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
+        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         let windows = UIWindow(windowScene: windowScene)
+        
+        let root = UINavigationController(rootViewController: ViewController())
+        windows.rootViewController = root
         windows.makeKeyAndVisible()
-        //windows.overrideUserInterfaceStyle = .light
-        //windows.rootViewController = UINavigationController(rootViewController: NavigationViewController())
-        windows.rootViewController = SettingsViewController()
-        
-        /// UICollectionView - One Projects
-        //let layout = UICollectionViewFlowLayout()
-        //layout.scrollDirection = .horizontal
-        //let swipingController = SwippingController(collectionViewLayout: layout)
-        //windows.rootViewController = swipingController
-        
-        /// UICollectionView - Two Projects
-        //let layout = UICollectionViewFlowLayout()
-        //windows.rootViewController = CollectionInstagramProgrammatically(collectionViewLayout: layout)
-        
         self.window = windows
+        
         
     }
 

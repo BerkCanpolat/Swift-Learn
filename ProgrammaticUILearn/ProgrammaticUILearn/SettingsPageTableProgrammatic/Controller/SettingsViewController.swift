@@ -69,7 +69,7 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        guard let section = SettingsSection(rawValue: section) else { return 0}
+        guard let section = SettingsSection(rawValue: section) else { return 0 }
         
         switch section {
         case .Social: return SocialOptions.allCases.count

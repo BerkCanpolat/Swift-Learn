@@ -16,17 +16,12 @@ class ViewController: UIViewController {
     
     
     lazy var loginButton: UIButton = {
-        
         let buton = UIButton(type: UIButton.ButtonType.system)
-        
         buton.setTitle("Giriş", for: UIControl.State.normal)
         buton.setTitleColor(UIColor.white, for: UIControl.State.normal)
         buton.backgroundColor = .black
         buton.layer.cornerRadius = 25
-        
         return buton
-        
-        
     }()
     
     
