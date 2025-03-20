@@ -20,7 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let windows = UIWindow(windowScene: windowScene)
         
-        let root = UINavigationController(rootViewController: ViewController())
+        let root = UINavigationController(rootViewController: WeatherViewController())
+        windows.backgroundColor = .systemBackground
         windows.rootViewController = root
         windows.makeKeyAndVisible()
         self.window = windows
