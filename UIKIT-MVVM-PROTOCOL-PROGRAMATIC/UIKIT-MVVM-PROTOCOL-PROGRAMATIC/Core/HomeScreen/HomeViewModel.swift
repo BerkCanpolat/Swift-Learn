@@ -7,6 +7,21 @@
 
 import Foundation
 
+protocol HomeViewModelInterface {
+    var view: HomeScreenInterFace? { get set }
+    func viewDidLoad()
+}
+
 final class HomeViewModel {
+    weak var view: HomeScreenInterFace?
+}
+
+
+extension HomeViewModel: HomeViewModelInterface {
+    func viewDidLoad() {
+        print("View Model Deneme")
+        view?.configureVC()
+    }
+    
     
 }
