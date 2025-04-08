@@ -15,6 +15,8 @@
 		C06B1DE72DA4358A008651A7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06B1DE62DA4358A008651A7 /* NetworkManager.swift */; };
 		C06B1DE92DA462A9008651A7 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06B1DE82DA462A9008651A7 /* Movie.swift */; };
 		C06B1DEB2DA46534008651A7 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06B1DEA2DA46534008651A7 /* MovieService.swift */; };
+		C06B1DED2DA59407008651A7 /* APIURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06B1DEC2DA59407008651A7 /* APIURLs.swift */; };
+		C06B1DEF2DA594A3008651A7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06B1DEE2DA594A3008651A7 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		C06B1DE62DA4358A008651A7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		C06B1DE82DA462A9008651A7 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		C06B1DEA2DA46534008651A7 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		C06B1DEC2DA59407008651A7 /* APIURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIURLs.swift; sourceTree = "<group>"; };
+		C06B1DEE2DA594A3008651A7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				C06B1DE62DA4358A008651A7 /* NetworkManager.swift */,
+				C06B1DEC2DA59407008651A7 /* APIURLs.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -117,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				C06B1DE42DA43542008651A7 /* HomeScreen.swift */,
+				C06B1DEE2DA594A3008651A7 /* HomeViewModel.swift */,
 			);
 			path = HomeScreen;
 			sourceTree = "<group>";
@@ -194,7 +200,9 @@
 				C06B1DEB2DA46534008651A7 /* MovieService.swift in Sources */,
 				C06B1DE72DA4358A008651A7 /* NetworkManager.swift in Sources */,
 				C06B1DE52DA43542008651A7 /* HomeScreen.swift in Sources */,
+				C06B1DEF2DA594A3008651A7 /* HomeViewModel.swift in Sources */,
 				C06B1DCB2DA429EC008651A7 /* AppDelegate.swift in Sources */,
+				C06B1DED2DA59407008651A7 /* APIURLs.swift in Sources */,
 				C06B1DCD2DA429EC008651A7 /* SceneDelegate.swift in Sources */,
 				C06B1DE92DA462A9008651A7 /* Movie.swift in Sources */,
 			);
