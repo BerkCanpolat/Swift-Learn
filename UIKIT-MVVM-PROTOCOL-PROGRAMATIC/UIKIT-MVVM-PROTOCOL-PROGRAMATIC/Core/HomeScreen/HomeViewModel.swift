@@ -21,7 +21,7 @@ extension HomeViewModel: HomeViewModelInterface {
     func viewDidLoad() {
         print("View Model Deneme")
         view?.configureVC()
+        view?.configureCollectionView()
     }
-    
     
 }

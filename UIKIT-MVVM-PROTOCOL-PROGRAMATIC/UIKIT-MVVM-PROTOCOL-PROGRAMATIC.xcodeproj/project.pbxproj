@@ -17,6 +17,7 @@
 		C06B1DEB2DA46534008651A7 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06B1DEA2DA46534008651A7 /* MovieService.swift */; };
 		C06B1DED2DA59407008651A7 /* APIURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06B1DEC2DA59407008651A7 /* APIURLs.swift */; };
 		C06B1DEF2DA594A3008651A7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06B1DEE2DA594A3008651A7 /* HomeViewModel.swift */; };
+		C06B1DF22DA84B18008651A7 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06B1DF12DA84B18008651A7 /* UIView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		C06B1DEA2DA46534008651A7 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		C06B1DEC2DA59407008651A7 /* APIURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIURLs.swift; sourceTree = "<group>"; };
 		C06B1DEE2DA594A3008651A7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		C06B1DF12DA84B18008651A7 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		C06B1DC92DA429EC008651A7 /* UIKIT-MVVM-PROTOCOL-PROGRAMATIC */ = {
 			isa = PBXGroup;
 			children = (
+				C06B1DF02DA84B0F008651A7 /* Extensions */,
 				C06B1DE12DA434B4008651A7 /* Core */,
 				C06B1DE02DA434AC008651A7 /* Service */,
 				C06B1DDF2DA434A9008651A7 /* Utility */,
@@ -125,6 +128,14 @@
 				C06B1DEE2DA594A3008651A7 /* HomeViewModel.swift */,
 			);
 			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		C06B1DF02DA84B0F008651A7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C06B1DF12DA84B18008651A7 /* UIView+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +213,7 @@
 				C06B1DE52DA43542008651A7 /* HomeScreen.swift in Sources */,
 				C06B1DEF2DA594A3008651A7 /* HomeViewModel.swift in Sources */,
 				C06B1DCB2DA429EC008651A7 /* AppDelegate.swift in Sources */,
+				C06B1DF22DA84B18008651A7 /* UIView+Ext.swift in Sources */,
 				C06B1DED2DA59407008651A7 /* APIURLs.swift in Sources */,
 				C06B1DCD2DA429EC008651A7 /* SceneDelegate.swift in Sources */,
 				C06B1DE92DA462A9008651A7 /* Movie.swift in Sources */,
